@@ -15,10 +15,11 @@ body {
     background-color: #b2b2b2;
     margin: 0;
     padding: 0;
-    height: 100px;
+    height: 50px;
     widht: 100%;
     max-width: 100%;
     min-width: 100%;
+    position: fixed;
 }
 
 .header #logo {
@@ -27,22 +28,29 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
+    transition: 0.3s ease all;
 }
 
 #logo img {
-    width: 75px;
-    height: 75px;
-    margin-top: 15%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.header #logo:hover {
+    background: #444;
 }
 
 /* Middle navigation bar */
 
 nav {
-    width: 80%;
+    width: 60%;
     display: inline-block;
-    text-align: center;
     vertical-align: middle;
     font-weight: bold;
+    margin-left: 10%;
+    height: 50px;
+
 }
 
 nav ul {
@@ -52,13 +60,14 @@ nav ul {
 
 nav ul li {
     display: inline-block;
+    text-align: center;
 }
 
 nav ul li a {
     color: #e7e7e7;
     text-decoration: none;
     display: block;
-    padding: 40px 40px;
+    padding: 15px 15px;
     width: 90px;
     height: 25px;
     transition: 0.3s ease all;
@@ -72,14 +81,19 @@ nav ul li a:hover {
     float: right;
     display: inline-block;
     position: relative;
-    height: 100px;
-     margin-right: 2%;
+    height: 55px;
+    width: 50px;
+    transition: 0.3s ease all;
+}
+
+.header-right:hover {
+    background: #444;
 }
 
 #profile img {
-    height: 50px;
-    width: 50px;
-    margin-top: 50%;
-   
-    
+    height: 25px;
+    width: 25px;
+    margin: 25%;
+    position: relative;
+
 }

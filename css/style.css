@@ -12,10 +12,11 @@ body {
 
 /* Header */
 .header {
+    z-index: 3;
     background-color: #b2b2b2;
     margin: 0;
     padding: 0;
-    height: 50px;
+    height: 8vh;
     widht: 100%;
     max-width: 100%;
     min-width: 100%;
@@ -24,16 +25,14 @@ body {
 
 .header #logo {
     float: left;
-    display: inline-block;
+    display: block;
     position: relative;
-    margin: 0;
-    padding: 0;
     transition: 0.3s ease all;
 }
 
 #logo img {
-    width: 50px;
-    height: 50px;
+    width: 8vh;
+    height: 8vh;
     position: relative;
 }
 
@@ -41,59 +40,127 @@ body {
     background: #444;
 }
 
-/* Middle navigation bar */
+/* navigation buttons */
 
-nav {
-    width: 60%;
-    display: inline-block;
-    vertical-align: middle;
-    font-weight: bold;
-    margin-left: 10%;
-    height: 50px;
-
+.header nav {
+    font-weight: 0;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box; 
 }
 
-nav ul {
+.header nav ul {
     list-style: none;
     margin: 0;
 }
 
-nav ul li {
+.header nav ul li {
     display: inline-block;
     text-align: center;
+    box-sizing: border-box;
 }
 
-nav ul li a {
-    color: #e7e7e7;
+.header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    display: block;
-    padding: 15px 15px;
-    width: 90px;
-    height: 25px;
-    transition: 0.3s ease all;
-}
-
-nav ul li a:hover {
-    background: #444;
-}
-
-.header-right {
-    float: right;
     display: inline-block;
-    position: relative;
-    height: 55px;
-    width: 50px;
+    padding: 2vh 2vh 1vh 2vh;
     transition: 0.3s ease all;
+    box-sizing: border-box;
+    height: 8vh;
 }
 
-.header-right:hover {
+.header nav ul li a:hover {
     background: #444;
 }
 
-#profile img {
-    height: 25px;
-    width: 25px;
-    margin: 25%;
-    position: relative;
+/* Curtain menu */
+.menu_toggler {
+    position: fixed;
+    top: 2vh;
+    right: 2vh;
+    z-index: 2;
+    height: 4vh;
+    width: 4vh;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+span,
+span::after,
+span::before {
+    content: '';
+    position: absolute;
+    width: 4vh;
+    height: 0.5vh;
+    background-color: #fff;
+    border-radius: 1vh;
+    transition: 500ms cubic-bezier(.77, 0, .175, 1);
+    right: 0px;
+}
+
+span {
+    width: 3vh;
+}
+
+span::after {
+    width: 2vh;
+}
+
+span::before {
+    top: -1.5vh;
+}
+
+span::after {
+    top: 1.5vh;
+}
+
+.menu_toggler.active > span {
+    background-color: transparent;
+}
+
+.menu_toggler.active > span::after,
+.menu_toggler.active > span::before {
+    background-color: #fff;
+    top: 0px;
+    right: 0px;
+    width: 28px;
+}
+
+.menu_toggler.active > span::before {
+    transform: rotate(-225deg);
+}
+
+.menu_toggler.active > span::after {
+    transform: rotate(225deg);
+}
+
+.menu {
+    position: absolute;
+    z-index: 1;
+    right: -30%;
+    top: 0px;
+    background-color: crimson;
+    height: 100%;
+    width: 10%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s right cubic-bezier(.77, 0, .175, 1);
+}
+
+.menu.active {
+    right: 0%;
+}
+
+.menu a {
+    margin-bottom: 1vh;
+    text-decoration: none;
+    color: #ffffff;
 }

@@ -4,10 +4,14 @@ body {
     padding: 0;
     line-height: 1.5;
     font-family: sans-serif;
+    overflow-x: hidden;
+}
+
 }
 
 body {
     background: #e7e7e7;
+    postion: relative;
 }
 
 /* Header */
@@ -26,6 +30,7 @@ body {
 .header #logo {
     float: left;
     display: block;
+    margin-left: 1vh;
     position: relative;
     transition: 0.3s ease all;
 }
@@ -40,14 +45,13 @@ body {
     background: #444;
 }
 
-/* navigation buttons */
-
+/* Navigation buttons */
 .header nav {
     font-weight: 0;
     height: 8vh;
     display: flex;
     justify-content: center;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .header nav ul {
@@ -140,9 +144,9 @@ span::after {
 }
 
 .menu {
-    position: absolute;
+    position: fixed;
     z-index: 1;
-    right: -30%;
+    right: -50%;
     top: 0px;
     background-color: crimson;
     height: 100%;
@@ -156,11 +160,52 @@ span::after {
 }
 
 .menu.active {
-    right: 0%;
+    right: -10%;
 }
 
 .menu a {
-    margin-bottom: 1vh;
+    margin-bottom: 4vh;
     text-decoration: none;
     color: #ffffff;
+}
+
+.content {
+    margin: 0 auto;
+    width: 60%;
+    postion: relative;
+    margin-top: 8vh;
+}
+
+/* Footer */
+.footer {
+    z-index: 1;
+    postion: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-width: 100%;
+    height: 20vh;
+    background-color: #a2a2a2;
+}
+
+.soMe {
+    position: relative;
+    margin: 10vh;
+    float: right;
+    margin-right: 5vh;
+    display: flex;
+}
+
+.soMe a {
+    margin: 1vh;
+}
+
+.footer .fa {
+    padding: 1vh;
+    width: 3vh;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: dimgrey;
+    color: #e7e7e7;
 }

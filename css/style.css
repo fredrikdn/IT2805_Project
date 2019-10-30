@@ -30,9 +30,10 @@ body {
 .header #logo {
     float: left;
     display: block;
-    margin-left: 1vh;
+    left: 1vh;
     position: relative;
     transition: 0.3s ease all;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 50% 75%, 0 100%, 0% 0%);
 }
 
 #logo img {
@@ -42,7 +43,7 @@ body {
 }
 
 .header #logo:hover {
-    background: #444;
+    background: #86242A;
 }
 
 /* Navigation buttons */
@@ -76,7 +77,7 @@ body {
 }
 
 .header nav ul li a:hover {
-    background: #444;
+    color: #444;
 }
 
 /* Curtain menu */
@@ -129,7 +130,7 @@ span::after {
 
 .menu_toggler.active > span::after,
 .menu_toggler.active > span::before {
-    background-color: #fff;
+    background-color: #444;
     top: 0px;
     right: 0px;
     width: 28px;
@@ -148,7 +149,7 @@ span::after {
     z-index: 1;
     right: -50%;
     top: 0px;
-    background-color: crimson;
+    background-image: linear-gradient(85deg, #660000, #4c0000, #330000, #4c0000, #660000, #4c0000, #330000, #4c0000, #660000, #4c0000,#660000, #4c0000, #330000, #4c0000, #660000, #4c0000, #330000, #4c0000, #660000, #4c0000);
     height: 100%;
     width: 10%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
@@ -169,11 +170,12 @@ span::after {
     color: #ffffff;
 }
 
+/* main content element of the page */
 .content {
     margin: 0 auto;
     width: 60%;
     postion: relative;
-    margin-top: 8vh;
+    margin-top: 20vh;
 }
 
 /* Footer */
@@ -190,8 +192,8 @@ span::after {
 
 .soMe {
     position: relative;
-    margin: 10vh;
     float: right;
+    top: 7vh;
     margin-right: 5vh;
     display: flex;
 }
@@ -208,4 +210,19 @@ span::after {
     border-radius: 50%;
     background-color: dimgrey;
     color: #e7e7e7;
+}
+
+.footer .fa-facebook:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
+.footer .fa-twitter:hover {
+    background-color: #00aced;
+    color: white;
+}
+
+.footer .fa-instagram:hover {
+    background-image: linear-gradient(-45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    color: white;
 }

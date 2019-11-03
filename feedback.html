@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Trondheim Feedback</title>
+    <link rel="stylesheet" href="css/style.css"> 
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-left">
+            <div class="menu_toggler">
+                <span></span>
+            </div>
+            <!-- logo -->
+            <a id="logo" href="index.html">
+                <img src="resources/logo.png" alt="logo not loaded" >
+            </a>
+        </div>
+        <!-- nav buttons -->
+        <nav>
+            <ul>
+                <li><a href="visninger.html">VISNINGER</a></li>
+                <li><a href="#">FILMQUIZ</a></li>
+                <li><a href="#">MEDLEMSKAP</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Curtain menu -->
+    <div class="menu">
+        <a href="vis">Styret</a>
+        <a href="#">Vedtekter</a>
+        <a href="#">FAQ</a>
+    </div>
+    
+    <form name="form" class='form'>
+        <h2>Filmtips</h2>
+        <div class="textinput">
+            <h3>Tilbakemelding</h3>
+            <textarea name = "feedback" placeholder="Overbevis oss her..." required></textarea>
+        </div>
+        <div class='desc'>Ditt navn:</div>
+        <input type='text' name='realname' required placeholder="Skriv inn navn her..." oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+        
+         <div class='desc'>Filmnavn:</div>
+        <input type='text' name='realname' required placeholder="Skriv inn navn her..." oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+
+        <div class='desc'>Email:</div>
+        <input type='email' name='email' required placeholder="email@email.com" oninvalid="this.setCustomValidity('Email Address Not Valid')" oninput="this.setCustomValidity('')">
+
+        <div class='desc'>Fødselsdato:</div>
+        <input type='date' name='date' max="2005-01-01" required>
+
+        <!-- chose to implement it this way, because type="number" didn't give me the option to have a dropdown menu with the values-->
+        <div class='powers'>
+            <h4 id="hp">Anbefalingsverdier [1 - 10]</h4>
+            <div class='desc'>Plot:</div>
+            <select class='sel' name='strength' required>
+                <option class="dis" disabled selected value>_</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+            </select>
+            <div class='desc'>Kinematografi:</div>
+            <select class='sel' name='speed' required>
+                <option class="dis" disabled selected value>_</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+            </select>    
+            <div class='desc'>Lyd:</div>
+            <select class='sel' name='intelligence' required>
+                <option class="dis" disabled selected value>_</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+            </select>
+        </div>
+
+         <div class="submit">
+             <button class='sub' type='submit' >Send inn tilbakemelding</button>
+        </div>
+    </form>
+    
+    <div class="output">!! THIS SHOULD NOT BE DISPLAYED IN FINAL VERSION, ONLY FOR PRESENTATION PURPOSES:</div>
+    
+    <script src="js/scripts.js"></script>
+</body>

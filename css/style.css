@@ -28,66 +28,40 @@ body {
     position: fixed;
 }
 
-.header .main {
-    display: block;
-    left: 0vh;
-    position: relative;
-    height: 15%;
-}
-
-.main #logo {
-    width: 8vh;
-    height: 11vh;
-    position: relative;
+/* Logo */
+.main {
+    display: inline-block;
+    position: absolute;
+    height: 110%;
+    width: 15vh;
+    padding: 3vh 0 2vh 0;
+    margin-left: 2vh;
     transition: 0.3s ease all;
     clip-path: polygon(100% 0, 100% 50%, 100% 100%, 50% 75%, 0 100%, 0% 0%);
 }
 
-.main #logo img {
-    width: 6vh;
-    height: 4vh;
+.main #logo {
     margin: 1vh;
 }
 
-.header .main #logo:hover {
-    background: #86242A;
+.main #logo img {
+    width: 90%;
+    height: 60%;
 }
 
+.header .main:hover {
+    background: #86242A;
+}
 
 /* Navigation buttons */
 .header nav {
     font-weight: 0;
     height: 8vh;
-    display: flex;
+    display: none;
     justify-content: center;
     box-sizing: border-box;
 }
 
-.header nav ul {
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.header nav ul li {
-    display: inline-block;
-    box-sizing: border-box;
-    padding-top: 0.75vh;
-}
-
-.header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 2vh 2vh 1vh 2vh;
-    transition: 0.3s ease all;
-    box-sizing: border-box;
-    height: 12vh;
-}
-
-.header nav ul li a:hover {
-    color: #444;
-}
 
 /* Curtain menu */
 .menu_toggler {
@@ -156,17 +130,19 @@ span::after {
 .menu {
     position: fixed;
     z-index: 1;
-    right: -50%;
+    right: -80%;
     top: 0px;
     /* curtain effect */
     background-image: linear-gradient(85deg, #660000, #4c0000, #330000, #4c0000, #660000, #4c0000, #330000, #4c0000, #660000, #4c0000, #660000, #4c0000, #330000, #4c0000, #660000, #4c0000, #330000, #4c0000, #660000, #4c0000);
     height: 100%;
-    width: 10%;
+    width: 40%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
     padding: 0px 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: right;
+    font-weight: bold;
     transition: 0.3s right cubic-bezier(.77, 0, .175, 1);
 }
 
@@ -175,7 +151,7 @@ span::after {
 }
 
 .menu a {
-    margin-bottom: 4vh;
+    margin-top: 3vh;
     text-decoration: none;
     color: #ffffff;
     font-size: 1.3em;
@@ -249,8 +225,16 @@ h3 {
     border-bottom: 2px solid dimgrey;
 }
 
+.desc {
+    width: 50%;
+}
+
 .powers {
     position: relative;
+}
+
+.powers h4 {
+    width: 50%;
 }
 
 .powers select {
@@ -262,28 +246,6 @@ h3 {
     position: relative;
 }
 
-.tax {
-    position: relative;
-}
-
-.tax label {
-    margin-left: 1%;
-    margin-bottom: 1%;
-    position: relative;
-}
-
-.tax .desc {
-    margin-bottom: 1%;
-    position: relative;
-    font-weight: bold;
-}
-
-.tax input {
-    padding: 1%;
-    margin-top: 1%;
-}
-
-
 .form {
     border-style: solid;
     border-color: dimgrey;
@@ -291,7 +253,7 @@ h3 {
     padding: 2.5%;
     width: 80%;
     margin: 0 auto;
-    margin-top: 15vh;
+    margin-top: 20vh;
     background: #e7e7e7;
     display: block;
     position: relative;
@@ -479,58 +441,68 @@ form:valid [type=submit] {
         position: fixed;
     }
 
-    .header #logo {
-        float: left;
-        display: block;
-        left: 1vh;
-        top: 0;
-        position: relative;
+    /* Logo */
+    .main {
+        display: inline-block;
+        position: absolute;
+        height: 90%;
+        width: 10vh;
+        padding: 1.5vh 0 2vh 0;
+        margin-left: 1vh;
         transition: 0.3s ease all;
         clip-path: polygon(100% 0, 100% 50%, 100% 100%, 50% 75%, 0 100%, 0% 0%);
     }
 
-    #logo img {
-        width: 8vh;
-        height: 8vh;
-        position: relative;
+    .main #logo {
+        margin: 0.5vh;
     }
 
-    .header #logo:hover {
+    .main #logo img {
+        width: 90%;
+        height: 70%;
+    }
+
+    .header .main:hover {
         background: #86242A;
     }
+
 
     /* Navigation buttons */
     .header nav {
         font-weight: bold;
-        height: 6vh;
-        display: flex;
+        postion: absolute;
+        height: 8vh;
+        display: block;
         justify-content: center;
         box-sizing: border-box;
         padding: 0;
+        top: 0;
     }
 
     .header nav ul {
+        display: block;
         list-style: none;
         margin: 0 auto;
         text-align: center;
         padding: 0;
+        width: 50%;
     }
 
     .header nav ul li {
         display: inline-block;
         box-sizing: border-box;
-        padding-top: 0vh;
-        height: 7vh;
+        height: 8vh;
     }
 
     .header nav ul li a {
         color: #fff;
         text-decoration: none;
-        display: inline-block;
-        padding: 1.5vh 2vh 1vh 2vh;
+        text-align: center;
+        display: block;
+        padding: 2.5vh 2vh 1.5vh 2vh;
         transition: 0.3s ease all;
         box-sizing: border-box;
-        height: 7vh;
+        height: 8vh;
     }
 
     .header nav ul li a:hover {
@@ -604,14 +576,15 @@ form:valid [type=submit] {
     .menu {
         position: fixed;
         z-index: 1;
-        right: -50%;
+        right: -60%;
+        margin-right: 3vh;
         top: 0px;
         /* curtain effect */
         background-image: linear-gradient(85deg, #660000, #4c0000, #330000, #4c0000, #660000, #4c0000, #330000, #4c0000, #660000, #4c0000, #660000, #4c0000, #330000, #4c0000, #660000, #4c0000, #330000, #4c0000, #660000, #4c0000);
         height: 100%;
-        width: 10%;
+        width: 20%;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
-        padding: 0px 100px;
+        padding: 0px 130px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -623,15 +596,29 @@ form:valid [type=submit] {
     }
 
     .menu a {
-        margin-bottom: 4vh;
+        margin-top: 1vh;
         text-decoration: none;
+        text-align: center;
         color: #ffffff;
+        padding: 2vh 2vh 0.6vh 2vh;
+        border-bottom: 2px solid black;
+        border-radius: 5%;
+    }
+
+    .menu a:hover {
+        color: #c2c2c2;
+        text-shadow: 1px 1px 2px dimgrey;
+        transition: 0.3s ease all;
+    }
+
+    .menu .mobile {
+        display: none;
     }
 
     /* Main content element of the page */
     .content {
         margin: 0 auto;
-        width: 60%;
+        width: 66%;
         postion: relative;
         margin-top: 15vh;
         margin-bottom: 5vh;
@@ -664,7 +651,7 @@ form:valid [type=submit] {
     .footer .fa {
         padding: 1vh;
         width: 2vh;
-        height: 1.7vh;
+        height: 2vh;
         text-align: center;
         text-decoration: none;
         border-radius: 50%;
@@ -708,28 +695,6 @@ form:valid [type=submit] {
         margin-left: 1%;
         position: relative;
     }
-
-    .tax {
-        position: relative;
-    }
-
-    .tax label {
-        margin-left: 1%;
-        margin-bottom: 1%;
-        position: relative;
-    }
-
-    .tax .desc {
-        margin-bottom: 1%;
-        position: relative;
-        font-weight: bold;
-    }
-
-    .tax input {
-        padding: 1%;
-        margin-top: 1%;
-    }
-
 
     .form {
         border-style: solid;

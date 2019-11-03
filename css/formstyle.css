@@ -1,0 +1,208 @@
+body {
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+}
+
+form h2, h3 {
+    font-weight: bold;
+    display: block;
+    padding: 2%;
+    border-bottom: 2px solid dimgrey;
+}
+
+.powers {
+    position: relative;
+}
+
+.powers select {
+    width: 40px;
+}
+
+.powers .desc {
+    margin-left: 1%;
+    position: relative;
+}
+
+.tax {
+    position: relative;
+}
+
+.tax label {
+    margin-left: 1%;
+    margin-bottom: 1%;
+    position: relative;
+}
+
+.tax .desc {
+    margin-bottom: 1%;
+    position: relative;
+    font-weight: bold;
+}
+
+.tax input {
+    padding: 1%;
+    margin-top: 1%;
+}
+
+
+.form {
+    border-style: solid;
+    border-color: dimgrey;
+    border-radius: 4px;
+    padding: 2.5%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15vh;
+    background: #e7e7e7;
+    display: block;
+    position: relative;
+
+}
+
+.information {
+    position: absolute;
+    border-style: solid;
+    border-color: dimgrey;
+    border-radius: 1vh;
+    width: 40%;
+    height: 69%;
+    left: 45%;
+    padding: 1%;
+    margin-top: 2.5%;
+    margin-left: 5%;
+    background-color: #ffffff;
+}
+
+.information textarea {
+    width: 97%;
+    height: 75%;
+    padding: 0.5vh;
+    border: none;
+}
+
+input {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid darkgrey;
+    border-radius: 4px;
+    margin-bottom: 2%;
+    background-color: #ffffff;
+}
+
+input:focus,
+input:hover {
+    border-color: dimgray;
+    box-shadow: inset 0px 0px 4px #a7a7a7;
+}
+
+input[type=text],
+input[type=email] {
+    padding: 1%;
+    width: 40%;
+    margin-top: 1%;
+}
+
+input[type=text]:invalid,
+input[type=email]:invalid,
+input[type=date]:invalid,
+input[type=number]:invalid,
+select:invalid {
+    border-left-color: crimson;
+}
+
+input[type=text]:valid,
+input[type=email]:valid,
+input[type=date]:valid,
+input[type=number]:valid,
+select:valid {
+    border-left-color: #b3ff66;
+}
+
+input[type=date] {
+    padding: 0.5%;
+    margin-top: 1%;
+    width: 40%;
+}
+
+.sel {
+    display: block;
+    width: 5%;
+    max-width: 5%;
+    border: 2px solid darkgrey;
+    border-radius: 4px;
+    margin: 1% 0 2% 1%;
+    box-sizing: border-box;
+}
+
+.sel:hover {
+    border-color: dimgray;
+}
+
+.sel:focus {
+    border-color: dimgray;
+}
+
+.sel:invalid {
+    border-left-color: crimson;
+}
+
+.radi .desc {
+    margin-bottom: 1%;
+}
+
+.desc {
+    display: block;
+    position: relative;
+}
+
+.rad {
+    display: inline;
+    padding: 1%;
+}
+
+.sub {
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #f9f9f9;
+    border: 2px solid darkgrey;
+    border-radius: 4px;
+    margin: 4% 0 2% 0;
+    box-sizing: border-box;
+    padding: 1% 2% 1% 2%;
+    box-shadow: 1px 1px 1px 1px #a7a7a7;
+}
+
+.sub:focus {
+    background-color: #e7e7e7;
+}
+
+.sub:hover {
+    background-color: #f9f9f9;
+}
+
+.sub:active {
+    box-shadow: inset 0px 0px 10px #a7a7a7;
+}
+
+form:invalid [type=submit] {
+    border-left-color: crimson;
+}
+
+form:valid [type=submit] {
+    border-left-color: #b3ff66;
+}
+
+.dis {
+    display: none;
+}
+
+.submit {
+    margin: 1%;
+}
+
+.output  {
+    text-align: center;
+    margin: 5%;
+    color: crimson;
+}

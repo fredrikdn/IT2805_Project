@@ -7,10 +7,8 @@ body {
     overflow-x: hidden;
 }
 
-}
-
 body {
-    background: #e7e7e7;
+    background: #f9f9f9;
     postion: relative;
 }
 
@@ -57,13 +55,15 @@ body {
 
 .header nav ul {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
 }
 
 .header nav ul li {
     display: inline-block;
-    text-align: center;
     box-sizing: border-box;
+    padding-top: 0.75vh;
 }
 
 .header nav ul li a {
@@ -149,6 +149,7 @@ span::after {
     z-index: 1;
     right: -50%;
     top: 0px;
+    /* curtain effect */
     background-image: linear-gradient(85deg, #660000, #4c0000, #330000, #4c0000, #660000, #4c0000, #330000, #4c0000, #660000, #4c0000,#660000, #4c0000, #330000, #4c0000, #660000, #4c0000, #330000, #4c0000, #660000, #4c0000);
     height: 100%;
     width: 10%;
@@ -170,30 +171,31 @@ span::after {
     color: #ffffff;
 }
 
-/* main content element of the page */
+/* Main content element of the page */
 .content {
     margin: 0 auto;
     width: 60%;
     postion: relative;
-    margin-top: 20vh;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
 }
 
 /* Footer */
 .footer {
-    z-index: 1;
+    z-index: 3;
     postion: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     min-width: 100%;
-    height: 20vh;
+    height: 15vh;
     background-color: #a2a2a2;
 }
 
 .soMe {
     position: relative;
     float: right;
-    top: 7vh;
+    top: 5vh;
     margin-right: 5vh;
     display: flex;
 }
@@ -204,7 +206,8 @@ span::after {
 
 .footer .fa {
     padding: 1vh;
-    width: 3vh;
+    width: 2vh;
+    height: 1.8vh;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;

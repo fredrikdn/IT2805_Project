@@ -709,6 +709,10 @@ form:valid [type=submit] {
         left:25vh;
     }
 
+    .medlemskap p{
+        display: block;
+    }
+
     /* Footer */
     .footer {
         position: relative;

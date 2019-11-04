@@ -666,22 +666,40 @@ form:valid [type=submit] {
     .menu .mobile {
         display: none;
     }
+    
+    /* Banner */
+    .banner {
+        z-index: 0;
+        position: relative;
+        width: 100%;
+        margin-bottom: -10vh;
+    }
+    
+    .banner img {
+        width: 100%;
+    }
 
     /* Main content element of the page */
     .content {
         position: relative;
         margin: 0 auto;
-        width: 60%;
-        min-height: 65vh;
+        width: 100%;
+        min-height: 60vh;
         margin-top: 15vh;
-        margin-bottom: 5vh;
+        margin-bottom: 10vh;
+    }
+    
+    .text {
+        margin: 0 auto;
+        width: 60%;
+        position: relative;
     }
 
     /* Cards */
     .card {
         transition: 0.3s;
         position: relative;
-        width: 70%;
+        width: 40%;
         margin: 0 auto;
         border: 1px solid black;
         background-color: #e7e7e7;
@@ -703,6 +721,7 @@ form:valid [type=submit] {
     }
     
     .card h4 {
+        font-size: 1.2ems;
         position: relative;
         display: block;
         top: -1.5vh;
@@ -725,15 +744,22 @@ form:valid [type=submit] {
         margin: 0 auto;
     }
     
-    .container{
+    .card .container{
         padding: 1vh;
+        margin: 0.2vh;
     }
 
     #filmtips {
         text-align: center;
     }
     
-    .medlemskap p{
+    .medlemskap {
+        margin: 0 auto;
+        width: 50%;
+        display: block;
+    }
+    
+    .medlemskap p {
         display: block;
     }
 

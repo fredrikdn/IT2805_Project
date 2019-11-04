@@ -18,6 +18,7 @@ function curtainListener() {
 
 // clone header and footer
 function createHeader() {
+   
     var header = document.createElement("div");
     var menuToggler = document.createElement("div");
     var span = document.createElement("span");
@@ -33,7 +34,7 @@ function createHeader() {
     var a1 = document.createElement("a");
     var a2 = document.createElement("a");
     var a3 = document.createElement("a");
-
+    
     a1.setAttribute("href", "visninger.html");
     a1.innerHTML = "VISNINGER";
 

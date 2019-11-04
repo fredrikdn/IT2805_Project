@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Filmquiz</title>
     <link rel="stylesheet" href="css/style.css">
@@ -11,21 +10,24 @@
 </head>
 
 <body>
+    <!-- Header -->
     <div class="header">
-        <div class="header-left">
-            <div class="menu_toggler">
-                <span></span>
-            </div>
-
+        <!-- menu toggler -->
+        <div class="menu_toggler">
+            <span></span>
+        </div>
+        <!-- logo -->
+        <div class="main">
             <a id="logo" href="index.html">
-                <img src="resources/logo.png" alt="logo not loaded" width="100px" height="100px">
+                <img src="resources/logo.png" alt="logo not loaded">
             </a>
         </div>
         <!-- nav buttons -->
         <nav>
             <ul>
-                <li><a href="#">VISNINGER</a></li>
-                <li><a href="#">FILMQUIZ</a></li>
+
+                <li><a href="visninger.html">VISNINGER</a></li>
+                <li><a href="filmquiz.html">FILMQUIZ</a></li>
                 <li><a href="#">MEDLEMSKAP</a></li>
             </ul>
         </nav>
@@ -33,12 +35,19 @@
 
     <!-- Curtain menu -->
     <div class="menu">
-        <a href="#">link1</a>
-        <a href="#">link2</a>
-        <a href="#">link3</a>
+        <a class="mobile" href="visninger.html">VISNINGER</a>
+        <a class="mobile" href="filmquiz.html">FILMQUIZ</a>
+        <a class="mobile" href="#">MEDLEMSKAP</a>
+        <a href="#">STYRET</a>
+        <a href="#">VEDTEKTER</a>
+        <a href="#">FAQ</a>
     </div>
 
-    <div class="overskrift"></div>
+    <div class="content">
+        <div class="quiz">
+            <h2>Sted: Work-Work</h2>
+        </div>
+    </div>
 
     <script src="js/scripts.js"></script>
 </body>

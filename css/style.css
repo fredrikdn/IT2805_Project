@@ -106,23 +106,23 @@ span::after {
     top: 2vh;
 }
 
-.menu_toggler.active > span {
+.menu_toggler.active>span {
     background-color: transparent;
 }
 
-.menu_toggler.active > span::after,
-.menu_toggler.active > span::before {
+.menu_toggler.active>span::after,
+.menu_toggler.active>span::before {
     background-color: #444;
     top: 0px;
     right: 0px;
     width: 28px;
 }
 
-.menu_toggler.active > span::before {
+.menu_toggler.active>span::before {
     transform: rotate(-225deg);
 }
 
-.menu_toggler.active > span::after {
+.menu_toggler.active>span::after {
     transform: rotate(225deg);
 }
 
@@ -462,7 +462,6 @@ form:valid [type=submit] {
         background: #86242A;
     }
 
-
     /* Navigation buttons */
     .header nav {
         font-weight: bold;
@@ -548,23 +547,23 @@ form:valid [type=submit] {
         top: 1.5vh;
     }
 
-    .menu_toggler.active > span {
+    .menu_toggler.active>span {
         background-color: transparent;
     }
 
-    .menu_toggler.active > span::after,
-    .menu_toggler.active > span::before {
+    .menu_toggler.active>span::after,
+    .menu_toggler.active>span::before {
         background-color: #444;
         top: 0px;
         right: 0px;
         width: 28px;
     }
 
-    .menu_toggler.active > span::before {
+    .menu_toggler.active>span::before {
         transform: rotate(-225deg);
     }
 
-    .menu_toggler.active > span::after {
+    .menu_toggler.active>span::after {
         transform: rotate(225deg);
     }
 
@@ -613,33 +612,44 @@ form:valid [type=submit] {
     /* Main content element of the page */
     .content {
         margin: 0 auto;
-        width: 75vh;
+        width: 60%;
         margin-top: 15vh;
         margin-bottom: 5vh;
     }
 
-    .quiz{
+    .quiz {
         position: relative;
         border: 2px solid darkgray;
-        height: 75vh;
-        width: 75vh;
+        margin: 0 auto;
+        height: 50vh;
+        width: 80%;
         align-content: center;
     }
 
-    .quiz h4{
+    .quiz h4 {
         position: absolute;
         box-sizing: border-box;
         top: -0.5vh;
         left: 2vh;
     }
 
-    .quiz ul{
+    .quiz ul {
         position: absolute;
         list-style: none;
         padding: 0;
         top: 0vh;
         right: 2vh;
         font-weight: bold;
+    }
+
+    .quiz img{
+        position: absolute;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 40vh;
+        bottom: 1vh;
+        left:25vh;
     }
 
     /* Footer */

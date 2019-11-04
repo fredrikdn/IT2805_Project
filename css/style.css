@@ -12,7 +12,6 @@ body {
 
 body {
     background: #f9f9f9;
-    postion: relative;
 }
 
 /* Header */
@@ -161,7 +160,6 @@ span::after {
 .content {
     margin: 0 auto;
     width: 60%;
-    postion: relative;
     margin-top: 20vh;
     margin-bottom: 5vh;
 }
@@ -169,7 +167,6 @@ span::after {
 /* Footer */
 .footer {
     z-index: 3;
-    postion: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -425,7 +422,6 @@ form:valid [type=submit] {
 
     body {
         background: #f9f9f9;
-        postion: relative;
     }
 
     /* Header */
@@ -470,7 +466,6 @@ form:valid [type=submit] {
     /* Navigation buttons */
     .header nav {
         font-weight: bold;
-        postion: absolute;
         height: 8vh;
         display: block;
         justify-content: center;
@@ -650,7 +645,6 @@ form:valid [type=submit] {
     /* Footer */
     .footer {
         z-index: 3;
-        postion: absolute;
         left: 0;
         bottom: 0;
         width: 100%;

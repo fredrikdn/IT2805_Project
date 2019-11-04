@@ -2,6 +2,7 @@
 function setup(){
     createHeader();
     curtainListener();
+    createFooter();
 }
 
 // curtain menu on the right, listener
@@ -71,8 +72,6 @@ function createHeader() {
     header.appendChild(main);
     header.appendChild(nav2);
 
-
-
     var menu = document.createElement("div");
     menu.setAttribute("class", "menu");
     var alist = [];
@@ -117,6 +116,40 @@ function createHeader() {
     document.body.insertAdjacentElement('afterbegin', menu);
     document.body.insertBefore(header, menu);
 
+}
+
+function createFooter() {
+    var footer = document.createElement("div");
+    var soMe = document.createElement("div");
+    var alist = [];
+    
+    footer.setAttribute("class", "footer");
+    soMe.setAttribute("class", "soMe");
+    
+    var a1 = document.createElement("a");
+    a1.setAttribute("href", "https://www.facebook.com/Trondheim.Filmklubb");
+    a1.setAttribute("class", "fa fa-facebook");
+    a1.setAttribute("target", "_blank");
+    alist.push(a1);
+    
+    var a2 = document.createElement("a");
+    a2.setAttribute("href", "https://twitter.com/th_filmklubb?lang=en");
+    a2.setAttribute("class", "fa fa-twitter");
+    a2.setAttribute("target", "_blank");
+    alist.push(a2);
+    
+    var a3 = document.createElement("a");
+    a3.setAttribute("href", "https://www.instagram.com/trondheimfilmklubb/?hl=en");
+    a3.setAttribute("class", "fa fa-instagram");
+    a3.setAttribute("target", "_blank");
+    alist.push(a3);
+    
+    for(i=0; i < alist.length; i++) {
+        soMe.appendChild(alist[i]);
+    }
+    
+    footer.appendChild(soMe);
+    document.body.insertAdjacentElement('beforeend', footer);
 }
 
 // form to json, handle filmtip-information submission

@@ -5,26 +5,29 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Trondheim Feedback</title>
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body onload="setup()">
- 
+
     <form name="form" class='form'>
         <h2>Filmtips</h2>
         <div class="textinput">
             <h3>Tilbakemelding</h3>
-            <textarea name = "feedback" placeholder="Overbevis oss her..." required></textarea>
+            <textarea name="feedback" placeholder="Overbevis oss her..." required></textarea>
         </div>
         <div class='desc'>Ditt navn:</div>
-        <input type='text' name='realname' required placeholder="Skriv inn navn her..." oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
-        
-         <div class='desc'>Filmnavn:</div>
-        <input type='text' name='realname' required placeholder="Skriv inn navn her..." oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+        <input type='text' name='realname' required placeholder="Skriv inn navn her..."
+            oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+
+        <div class='desc'>Filmnavn:</div>
+        <input type='text' name='realname' required placeholder="Skriv inn navn her..."
+            oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
 
         <div class='desc'>Email:</div>
-        <input type='email' name='email' required placeholder="email@email.com" oninvalid="this.setCustomValidity('Email Address Not Valid')" oninput="this.setCustomValidity('')">
+        <input type='email' name='email' required placeholder="email@email.com"
+            oninvalid="this.setCustomValidity('Email Address Not Valid')" oninput="this.setCustomValidity('')">
 
         <div class='desc'>Fødselsdato:</div>
         <input type='date' name='date' max="2005-01-01" required>
@@ -59,7 +62,7 @@
                 <option value=8>8</option>
                 <option value=9>9</option>
                 <option value=10>10</option>
-            </select>    
+            </select>
             <div class='desc'>Lyd:</div>
             <select class='sel' name='intelligence' required>
                 <option class="dis" disabled selected value>_</option>
@@ -76,12 +79,12 @@
             </select>
         </div>
 
-         <div class="submit">
-             <button class='sub' type='submit' >Send inn tilbakemelding</button>
+        <div class="submit">
+            <button class='sub' type='submit'>Send inn tilbakemelding</button>
         </div>
     </form>
-    
+
     <div class="output">!! THIS SHOULD NOT BE DISPLAYED IN FINAL VERSION, ONLY FOR PRESENTATION PURPOSES:</div>
-    
+
     <script src="js/scripts.js"></script>
 </body>

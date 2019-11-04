@@ -1,11 +1,19 @@
-// curtain menu on the right, listener
-const iconMenu = document.querySelector('.menu_toggler');
-const menu = document.querySelector('.menu');
+// add functions on load
+function setup(){
+    createHeader();
+    curtainListener();
+}
 
-iconMenu.addEventListener('click', function () {
-    this.classList.toggle('active');
-    menu.classList.toggle('active');
-})
+// curtain menu on the right, listener
+function curtainListener() {
+    const iconMenu = document.querySelector('.menu_toggler');
+    const menu = document.querySelector('.menu');
+
+    iconMenu.addEventListener('click', function () {
+        this.classList.toggle('active');
+        menu.classList.toggle('active');
+    })
+}
 
 // clone header and footer
 function createHeader() {
@@ -52,19 +60,19 @@ function createHeader() {
     a.setAttribute("href", "index.html");
     img.setAttribute("src", "resources/logo.png");
     img.setAttribute("alt", "logo not loaded");
-    
+
     a.appendChild(img);
-    
+
     main.appendChild(a);
 
     menuToggler.appendChild(span);
-    
+
     header.appendChild(menuToggler);
     header.appendChild(main);
     header.appendChild(nav2);
 
-    
-    
+
+
     var menu = document.createElement("div");
     menu.setAttribute("class", "menu");
     var alist = [];
@@ -101,15 +109,14 @@ function createHeader() {
     a6.setAttribute("href", "#");
     a6.innerHTML = "FAQ";
     alist.push(a6);
-    
-    for(i = 0; i < alist.length; i++) {
+
+    for (i = 0; i < alist.length; i++) {
         menu.appendChild(alist[i]);
     }
-    
+
     document.body.insertAdjacentElement('afterbegin', menu);
     document.body.insertBefore(header, menu);
-    
-    
+
 }
 
 // form to json, handle filmtip-information submission

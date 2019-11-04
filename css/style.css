@@ -669,46 +669,11 @@ form:valid [type=submit] {
     .container{
         padding: 1vh;
     }
-    
-    .quiz {
-        position: relative;
-        border: 2px solid darkgray;
-        margin: 0 auto;
-        height: 50vh;
-        width: 80%;
-        align-content: center;
-    }
 
-    .quiz h4 {
-        position: absolute;
-        box-sizing: border-box;
-        top: -0.5vh;
-        left: 2vh;
-    }
-
-    .quiz ul {
-        position: absolute;
-        list-style: none;
-        padding: 0;
-        top: 0vh;
-        right: 2vh;
-        font-weight: bold;
+    #filmtips {
+        text-align: center;
     }
     
-    .quiz ul li {
-        text-align: right;
-    }
-
-    .quiz img{
-        position: absolute;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: 40vh;
-        bottom: 1vh;
-        left:25vh;
-    }
-
     .medlemskap p{
         display: block;
     }

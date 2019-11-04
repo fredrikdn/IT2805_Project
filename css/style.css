@@ -618,21 +618,33 @@ form:valid [type=submit] {
     /* Main content element of the page */
     .content {
         margin: 0 auto;
-        width: 66%;
-        postion: relative;
+        width: 75vh;
         margin-top: 15vh;
         margin-bottom: 5vh;
     }
 
     .quiz{
-        position: absolute;
-        box-sizing: border-box;
+        position: relative;
         border: 2px solid darkgray;
+        height: 75vh;
+        width: 75vh;
+        align-content: center;
     }
 
-    .quiz h2{
-        position: relative;
+    .quiz h4{
+        position: absolute;
         box-sizing: border-box;
+        top: -0.5vh;
+        left: 2vh;
+    }
+
+    .quiz ul{
+        position: absolute;
+        list-style: none;
+        padding: 0;
+        top: 0vh;
+        right: 2vh;
+        font-weight: bold;
     }
 
     /* Footer */

@@ -611,12 +611,65 @@ form:valid [type=submit] {
 
     /* Main content element of the page */
     .content {
+        position: relative;
         margin: 0 auto;
         width: 60%;
         margin-top: 15vh;
         margin-bottom: 5vh;
     }
 
+    /* Cards */
+    .card {
+        transition: 0.3s;
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+        border: 1px solid black;
+        background-color: #e7e7e7;
+        margin-bottom: 5vh;
+    }
+    
+    .card img {
+        width: 100%;
+        position: relative;
+        border: 1px solid black;
+        box-sizing: border-box;
+        border-left: 0;
+        border-right: 0; 
+        
+    }
+    
+    .card:hover {
+        box-shadow: 0 8px 16px 0 dimgrey;
+    }
+    
+    .card h4 {
+        position: relative;
+        display: block;
+        top: -1.5vh;
+        left: 1vh;
+        width: 50%
+    }
+    
+    .card ul {
+        position: absolute;
+        display: block;
+        list-style: none;
+        padding: 0;
+        right: 2vh;
+        top: 0vh;
+        font-weight: bold;
+    }
+    
+    .card p {
+        padding: 2vh;
+        margin: 0 auto;
+    }
+    
+    .container{
+        padding: 1vh;
+    }
+    
     .quiz {
         position: relative;
         border: 2px solid darkgray;
@@ -641,6 +694,10 @@ form:valid [type=submit] {
         right: 2vh;
         font-weight: bold;
     }
+    
+    .quiz ul li {
+        text-align: right;
+    }
 
     .quiz img{
         position: absolute;
@@ -654,6 +711,7 @@ form:valid [type=submit] {
 
     /* Footer */
     .footer {
+        position: relative;
         z-index: 3;
         left: 0;
         bottom: 0;

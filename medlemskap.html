@@ -6,42 +6,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Trondheim Filmklubb</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
-<body>
-    <!-- Header -->
-    <div class="header">
-        <!-- menu toggler -->
-        <div class="menu_toggler">
-            <span></span>
-        </div>
-        <!-- logo -->
-        <div class="main">
-            <a id="logo" href="index.html">
-                <img src="resources/logo.png" alt="logo not loaded">
-            </a>
-        </div>
-        <!-- nav buttons -->
-        <nav>
-            <ul>
-
-                <li><a href="visninger.html">VISNINGER</a></li>
-                <li><a href="filmquiz.html">FILMQUIZ</a></li>
-                <li><a href="medlemskap.html">MEDLEMSKAP</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- Curtain menu -->
-    <div class="menu">
-        <a class="mobile" href="visninger.html">VISNINGER</a>
-        <a class="mobile" href="filmquiz.html">FILMQUIZ</a>
-        <a class="mobile" href="medlemskap.html">MEDLEMSKAP</a>
-        <a href="#">STYRET</a>
-        <a href="#">VEDTEKTER</a>
-        <a href="#">FAQ</a>
-    </div>
+<body onload="setup()">
 
     <div class="content">
         <div class="medlemskap">
@@ -55,7 +22,5 @@
             <p>Medlemskap og A-kort gjelder for et halvt år (et semester) om gangen. Merk at billett kun er gyldig sammen med selve A-kortet/medlemskort. Kortene hentes på kinoen i Olavshallen før første visning.</p>
         </div>
     </div>
-
-</body>
-
-</html>
+    <script src="js/scripts.js"></script>
+</body></html>

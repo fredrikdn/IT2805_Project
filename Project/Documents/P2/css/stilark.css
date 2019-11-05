@@ -1,0 +1,100 @@
+body {
+    background-color: #a7a7a7;
+    margin: 0;
+    padding: 0;
+}
+
+.rammeStdr {
+    position: relative;
+    font-family: "verdana", serif;
+    color: #123C69;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #e7e7e7;
+    margin-top: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+    background-color: #e7e7e7;
+    text-align: center;
+    box-shadow: 5px 5px grey;
+}
+
+.bildeStdr {
+    padding-top: 10px;
+    width: 75%;
+    border-radius: 2%;
+}
+
+p {
+    display: block;
+    font-size: 20px;
+    line-height: 20pt;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.overskrift {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.underOverskrift {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.list {
+    text-align: left;
+    padding-left: 10%;
+    list-style-type: square;
+}
+
+#bakgrunn1:hover {
+    color: #A7A7A7;
+}
+
+#navigasjonsbar:hover {
+    color: #FFFFFF;
+}
+
+#skrift:hover {
+    color: #000000;
+}
+
+#bakgrunn2:hover {
+    color: #86242A
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+#table td,
+#table th {
+    border: 1px solid #ffffff;
+    padding: 8px;
+}
+
+#table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #e0e0e0;
+    color: #123C69;
+}

@@ -3,15 +3,15 @@ html,
 body {
     margin: 0;
     padding: 0;
-    line-height: 1.5;
-    font-family: sans-serif;
-    font-size: 1.1em;
     overflow-x: hidden;
 
 }
 
 body {
     background: #f9f9f9;
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-size: 1.1em;
 }
 
 /* Header */
@@ -106,23 +106,23 @@ span::after {
     top: 2vh;
 }
 
-.menu_toggler.active>span {
+.menu_toggler.active > span {
     background-color: transparent;
 }
 
-.menu_toggler.active>span::after,
-.menu_toggler.active>span::before {
+.menu_toggler.active > span::after,
+.menu_toggler.active > span::before {
     background-color: #444;
     top: 0px;
     right: 0px;
     width: 28px;
 }
 
-.menu_toggler.active>span::before {
+.menu_toggler.active > span::before {
     transform: rotate(-225deg);
 }
 
-.menu_toggler.active>span::after {
+.menu_toggler.active > span::after {
     transform: rotate(225deg);
 }
 
@@ -166,60 +166,60 @@ span::after {
 }
 
 /* Cards */
-    .card {
-        transition: 0.3s;
-        position: relative;
-        width: 100%;
-        margin: 0 auto;
-        border: 1px solid black;
-        background-color: #e7e7e7;
-        margin-bottom: 5vh;
-    }
-    
-    .card img {
-        width: 100%;
-        position: relative;
-        border: 1px solid black;
-        box-sizing: border-box;
-        border-left: 0;
-        border-right: 0; 
-        
-    }
-    
-    .card:hover {
-        box-shadow: 0 8px 16px 0 dimgrey;
-    }
-    
-    .card h4 {
-        position: relative;
-        display: block;
-        top: -1.75vh;
-        left: 1vh;
-        width: 50%
-    }
-    
-    .card ul {
-        position: absolute;
-        display: block;
-        list-style: none;
-        padding: 0;
-        right: 2vh;
-        top: 0vh;
-        font-weight: bold;
-    }
-    
-    .card p {
-        padding: 2vh;
-        margin: 0 auto;
-    }
-    
-    .container{
-        padding: 1vh;
-    }
+.card {
+    transition: 0.3s;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: #e7e7e7;
+    margin-bottom: 5vh;
+}
 
-    #filmtips {
-        text-align: center;
-    }
+.card img {
+    width: 100%;
+    position: relative;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-left: 0;
+    border-right: 0;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 dimgrey;
+}
+
+.card h4 {
+    position: relative;
+    display: block;
+    top: -1.75vh;
+    left: 1vh;
+    width: 50%
+}
+
+.card ul {
+    position: absolute;
+    display: block;
+    list-style: none;
+    padding: 0;
+    right: 2vh;
+    top: 0vh;
+    font-weight: bold;
+}
+
+.card p {
+    padding: 2vh;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 1vh;
+}
+
+#filmtips {
+    text-align: center;
+}
 
 
 /* Footer */
@@ -605,23 +605,23 @@ form:valid [type=submit] {
         top: 1.5vh;
     }
 
-    .menu_toggler.active>span {
+    .menu_toggler.active > span {
         background-color: transparent;
     }
 
-    .menu_toggler.active>span::after,
-    .menu_toggler.active>span::before {
+    .menu_toggler.active > span::after,
+    .menu_toggler.active > span::before {
         background-color: #444;
         top: 0px;
         right: 0px;
         width: 28px;
     }
 
-    .menu_toggler.active>span::before {
+    .menu_toggler.active > span::before {
         transform: rotate(-225deg);
     }
 
-    .menu_toggler.active>span::after {
+    .menu_toggler.active > span::after {
         transform: rotate(225deg);
     }
 
@@ -666,18 +666,6 @@ form:valid [type=submit] {
     .menu .mobile {
         display: none;
     }
-    
-    /* Banner */
-    .banner {
-        z-index: 0;
-        position: relative;
-        width: 100%;
-        margin-bottom: -10vh;
-    }
-    
-    .banner img {
-        width: 100%;
-    }
 
     /* Main content element of the page */
     .content {
@@ -688,9 +676,23 @@ form:valid [type=submit] {
         margin-top: 15vh;
         margin-bottom: 10vh;
     }
-    
+
+    /* Banner */
+    .banner {
+        z-index: 0;
+        position: relative;
+        width: 100%;
+        margin-top: -15vh;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+
     .text {
         margin: 0 auto;
+        margin-top: 5vh;
         width: 60%;
         position: relative;
     }
@@ -705,21 +707,21 @@ form:valid [type=submit] {
         background-color: #e7e7e7;
         margin-bottom: 5vh;
     }
-    
+
     .card img {
         width: 100%;
         position: relative;
         border: 1px solid black;
         box-sizing: border-box;
         border-left: 0;
-        border-right: 0; 
-        
+        border-right: 0;
+
     }
-    
+
     .card:hover {
         box-shadow: 0 8px 16px 0 dimgrey;
     }
-    
+
     .card h4 {
         font-size: 1.2ems;
         position: relative;
@@ -728,7 +730,7 @@ form:valid [type=submit] {
         left: 1vh;
         width: 50%
     }
-    
+
     .card ul {
         position: absolute;
         display: block;
@@ -738,13 +740,13 @@ form:valid [type=submit] {
         top: 0vh;
         font-weight: bold;
     }
-    
+
     .card p {
         padding: 2vh;
         margin: 0 auto;
     }
-    
-    .card .container{
+
+    .card .container {
         padding: 1vh;
         margin: 0.2vh;
     }
@@ -752,13 +754,13 @@ form:valid [type=submit] {
     #filmtips {
         text-align: center;
     }
-    
+
     .medlemskap {
         margin: 0 auto;
         width: 50%;
         display: block;
     }
-    
+
     .medlemskap p {
         display: block;
     }
@@ -868,6 +870,7 @@ form:valid [type=submit] {
         height: 75%;
         padding: 0.5vh;
         border: none;
+        border-bottom: 2px solid dimgrey;
     }
 
     input {
@@ -969,6 +972,8 @@ form:valid [type=submit] {
 
     .sub:hover {
         background-color: #f9f9f9;
+        cursor: pointer;
+        box-shadow: 0.1vh 0.1vh 0 dimgrey;
     }
 
     .sub:active {

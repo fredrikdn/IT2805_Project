@@ -1,0 +1,44 @@
+body {
+    background-color: #a7a7a7;
+}
+
+.rammeStdr {
+    position: relative;
+    font-family: "verdana", serif;
+    color: #123C69;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #e7e7e7;
+    margin-top: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+    background-color: #e7e7e7;
+    text-align: center;
+    box-shadow: 5px 5px grey;
+}
+
+.rammeStdr h3 {
+    border-bottom: 2px solid dimgrey;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 2vh;
+}
+
+.bildeStdr {
+    padding-top: 10px;
+    width: 75%;
+    border-radius: 2%;
+}
+
+p {
+    display: block;
+    font-size: 16px;
+    line-height: 20pt;
+    text-align: left;
+    padding: 0 5% 0 5%;
+}

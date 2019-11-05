@@ -1,0 +1,32 @@
+html,
+body {
+    margin: 0;
+    paddin: 0;
+    height: 100%;
+}
+
+body {
+    background: #f9f9f9;
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
+
+.header {
+    border-bottom: 0.1vh solid dimgrey;
+    width: 90%;
+    margin: 2vh;
+}
+
+.header h1 {
+    display: block;
+    position: relative;
+    left: 1vh;
+}
+
+main a {
+    position: relative;
+    display: block;
+    margin: 1vh;
+    left: 3vh;
+}

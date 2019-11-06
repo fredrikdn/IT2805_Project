@@ -1,0 +1,116 @@
+html,
+body {
+    background-color: #a7a7a7;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.rammestdr {
+    position: relative;
+    color: #123C69;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: dimgrey;
+    margin-top: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #e7e7e7;
+    text-align: center;
+    box-shadow: 5px 5px grey;
+    font-size: large;
+}
+
+#farg {
+    position: relative;
+    left: 25%;
+    top: 50%;
+    max-width: 50%;
+
+}
+
+#headertxt {
+    text-align: center;
+}
+
+#logo {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+#header {
+    text-align: center;
+    border: 2px;
+    border-color: darkgray;
+    border-style: solid;
+    border-radius: 8px;
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #a7a7a7;
+}
+
+p {
+    text-align: left;
+
+}
+
+h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+h1:hover {
+    color: red;
+}
+
+body {
+    background-color: #EEE2DC;
+
+}
+
+.tg {
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+
+.tg td {
+    font-size: 14px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: black;
+}
+
+.tg th {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: black;
+}
+
+.tg-0lax {
+    text-align: left;
+    vertical-align: top;
+}
+
+#funksjonelle_krav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #a7a7a7;
+}

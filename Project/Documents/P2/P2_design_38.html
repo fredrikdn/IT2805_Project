@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html lang="nb" dir="ltr">
+
+
+<head>
+    <link rel="stylesheet" href="css/stilark.css">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
+    <script src="scripts/time.js"></script>
+    <title>P2 - Project design</title>
+
+</head>
+
+<body>
+
+    <div class="rammeStdr">
+        <div id="headerTxt">
+            <img src="resources/TFLogo.png" alt="image not loaded" id="logo">
+            <hr>
+            <h5 id="navn">Fredrik, Martin, Per og Pål</h5>
+            <h4 id="gruppe">Gruppe 38</h4>
+            <h6 id="folk">
+                <a href="http://folk.ntnu.no/perdh/" target="_blank">folk.ntnu.no/perdh</a>
+            </h6>
+
+            <h6> Sist endret: 05.11.2019
+
+            </h6>
+        </div>
+
+    </div>
+
+    <div class="rammeStdr">
+        <div id="admDetails">
+
+            <p>Klientnavn: Trondheim filmklubb</p>
+            <p>Websidenavn: Trondheim filmklubb</p>
+            <p>Kontaktperson: Pål Manshaus</p>
+
+        </div>
+
+    </div>
+
+    <div class="rammeStdr">
+        <p class="overskrift">
+            Administrative detaljer:
+        </p>
+
+        <p>
+            Nettsiden sitt formål er hovedsakelig å informere om når filmer vil vises, når quiz holdes, og hva Trondheim filmklubb er. Derfor er målet vårt med nettsiden å lage en enkel navigerbar nettside, som også virker fristende, og er tydelig på hva filmklubben faktisk er. Nettsiden sitt publikum vil være hovedsakelig de som vil komme på visninger og quizer, men også diverse filmsamfunn som vil få noe kunnskap om oss, samt folk som kan tenke seg være frivillige.
+        </p>
+
+
+    </div>
+
+    <div class="rammeStdr">
+
+        <div>
+
+            <p class="overskrift">
+                Navigasjonsstruktur
+            </p>
+
+            <p>
+                Med navigasjonsstrukturen har vi tenkt det skal være enklest mulig å komme til hvilken side som helst, og dermed har vi en fastlåst meny/banner hvor man skal kunne navigere seg til hver av de ulike sidene. Denne menyen vil konstant være låst til toppen av skjermen, slik at den alltid vil være tilstede. Grunnen til at vi velger en slik løsning er at det da blir utrolig mye enklere for brukeren å navigere, samt at når menyen er låst til toppen av brukerens vindu vil man slippe å bruke mye ekstra tid på å bla opp til toppen for å gå videre. Dette gjør vi med tanke på usability og at det skal være konsistens mellom siden, og forenkle det å kunne navigere seg frem og tilbake. Vi ønsker også at brukeren alltid skal kunne vite hvor på nettsiden den er, og av den grunn utheves den nåværende siden i navigasjon
+
+            </p>
+
+
+
+        </div>
+
+        <figure>
+            <img class="bildeStdr" src="resources/network.png" alt="No image found!">
+            <figcaption>Figur 1: Nettverket har en n:m relasjon (alle til alle), altså en clique-struktur. Dette gjøres ved implementering av en navigasjonsbar som forklart ovenfor.</figcaption>
+        </figure>
+
+    </div>
+
+    <div class="rammeStdr">
+
+
+        <div>
+            <p class="overskrift">
+                Sideoppsett og visning
+            </p>
+
+            <p>
+                Websiden skal være enkel i design, for at alle fra bestemor til Bill Gates. Vi legger
+                navigasjons blokken øverst på siden, da dette skal være det første og viktigste elementet på
+                siden for å finne fram til relevant informasjon. Videre jobber vi med “F-layout” prinsippet for at de riktige og viktigste elementene på siden skal enkelt fange blikket til brukeren. Logoen til trondheim filmklubb skal være oppe til venstre på siden, dette for å markere hvem siden tilhører.
+
+            </p>
+
+
+            <p>
+                Fargene vi ønsker å bruke er hvit for navigasjonsbaren, svart på tekstfargen og grå
+                bakgrunn, dette gir sterke kontraster og et moderne design som er lett å lese. Alle
+                paragrafene skal ha ha en egen bakgrunn i ‘velvet rød’, rødfargen skal likne fargen på et film
+                teppe. Den egne fargen på paragrafene skal også ha en skygge nederst og til høyre for å gi
+                en “løftet” følelse. Teksten i paragrafene kan være hvit for å få kontrast med den dype
+                rødfargen på den relative bakgrunnen. Nederst på siden bruker vi en ‘footer’ som skal ved
+                hjelp av farge, signalisere at siden slutter.
+
+            </p>
+
+
+
+            <p class="underOverskrift">
+                Spesifikke fargevalg
+            </p>
+            <ul class="list">
+                <li id="bakgrunn1">Bakgrunn 1: #A7A7A7 - grå</li>
+                <li id="navigasjonsbar">Navigasjonsbar #000000 - hvit</li>
+                <li id="skrift">Skrift #FFFFFF - Svart</li>
+                <li id="bakgrunn2">Bakgrunn 2: #86242A - Velvet red</li>
+            </ul>
+
+
+            <p>
+                Skrifttypen vi bruker er raleway med skriftstørrelse 14 som minimum på paragrafen.
+                Overskrifter skal videre ha størrelse 20. Navbaren sin skrift har skriftstørrelse 30.
+                Verdana, times new roman og serif er skrifttypene som falles tilbake på dersom hovedskrifttypen ikke støttes. Skriftfargen ønsker vi skal ha samme farge som footeren, dette for å gi en klar sammenheng på siden
+            </p>
+
+            <p>
+                Landingssiden skal ha et sceneteppe som kan animeres til å trekke til side ved hjelp av javascript-kode.
+            </p>
+
+
+            <p>
+                På mobile plattformer vil siden skaleres gjennom media-queries, derfor ønsker vi å bruke stor font på navigasjonspanelet.
+            </p>
+
+            <p>
+                Disse kombinasjonene av farger og design vil gi siden en følelse av enkelhet, og dermed gjøre siden brukervennlig. Den er intuitiv strukturert etter “F-layout”-prinsippet og enkelt kan assosieres med mange andre nettsider. Når navigasjonsbaren indikerer hvor på siden brukeren er ved hjelp av en ramme, vil dette også gjøre siden lettere å bruke.
+            </p>
+
+            <p>
+                Disse universelle reglene for siden skal på en god måte gi brukeren en assosiasjon til filmteater. Kombinasjonen av rød, grå og hvit, gjør dette på en hendig måte.
+            </p>
+
+            <figure>
+
+
+                <img class="bildeStdr" src="resources/layoutEksempel.png" alt="Image not found!">
+                <figcaption>Figur 2: Dette er et røft estimat på hvordan siden skal se ut.</figcaption>
+            </figure>
+
+        </div>
+
+
+    </div>
+
+    <div class="rammeStdr">
+        <p class="overskrift">Content</p>
+        <p>Websiden vil bestå av ni separate sider, som vil bli beskrevet under.</p>
+
+        <p class=underOverskrift>
+            Side 1: Homepage - index.html
+        </p>
+
+
+        <figure>
+            <img class="bildeStdr" src="resources/Main.png" alt="No image found">
+            <figcaption>Figur 3: Mockup av index.html</figcaption>
+        </figure>
+
+
+
+        <p>
+            Denne siden vil være den første siden brukeren møter i det den besøker vår nettside. For å forhindre at brukeren blir overveldet av informasjon og lignende, har vi tenkt at startsiden vår skal være enkel og minimalistisk, men samtidig ha enkle objekter som brukeren kan interagere med.
+        </p>
+
+
+        <p>
+            Med tanke på sceneteppe er det planlagt at skal åpne seg i det brukeren interagerer med nettsiden, for så å vise brukeren innholdet de ønsker. Dette vil bli implementert med et enkelt script, som blir trigget med en gang brukeren interagerer med nettsiden. Når noe er trykket på, vil brukeren bli sendt til den respektive siden, der sceneteppet åpnes og eksponerer innholdet.
+        </p>
+
+        <p>
+            Headeren vil alltid være synlig og vil vises øverst. Dette er for at brukeren enkelt skal kunne navigere rundt på siden. Ved å klikke på logoen til Trondheim Filmklubb vil brukeren bli omdirigert til denne siden.
+        </p>
+
+
+        <p class="underOverskrift">
+            Side 2: Visninger - visninger.html
+        </p>
+
+        <figure>
+            <img class="bildeStdr" src="resources/Visninger.png" alt="Image not found!">
+            <figcaption>Figur 4: Mockup av visninger.html</figcaption>
+        </figure>
+
+
+        <p>
+            Denne siden skal gi brukeren en oversikt over når forskjellige filmer vises i filmklubben. Siden vil inneholde tittel, tid, dato, samtidig som trailer for den respektive filmen vil vises. Det kan også legges til mer tekst under traileren, med informasjon om bl.a link til facebook-arrangement, skuespillere, regissør osv. Traileren vil bli implementert slik at den vises ved hjelp av iframe. På siden vil brukeren også ha mulighet til å se flere visninger og interagere med dem.
+
+        </p>
+
+        <p>
+            Videoene skal ikke ha autoplay, lyd skal være dempet (muted), og poster til videoene vil være filmplakat (evt. stillbilde av video). Det vil også være en lenke til trailerens kilde. Dette vil bidra til at brukeren enkelt kan klikke på trailerne den ønsker å se.
+        </p>
+
+        <p>
+            Målet med denne siden er å lett kunne gi ut informasjon om filmvisninger, slik at brukerne enkelt kan bruke nettsiden til å søke og finne de filmene som interesserer dem.
+        </p>
+
+
+        <p>
+            Nederst på siden vil det være en footer (implementasjonen på denne er nærmere beskrevet under filmquiz-siden). Hver visning vil være plassert i senter på nettsiden, med en høyre og venstre-margin på 25% og en margin på 10% til neste visning.
+        </p>
+
+
+        <p class="underOverskrift">
+            Side 3: Filmquiz - filquiz.html
+        </p>
+
+        <figure>
+            <img class="bildeStdr" src="resources/Filmquiz.png" alt="Image not found!">
+            <figcaption>Figur 5: Mockup av filmquiz.html</figcaption>
+        </figure>
+
+
+        <figure>
+            <img class="bildeStdr" src="resources/Filmquiz2.png" alt="Image not found!">
+            <figcaption>Figur 6: Mockup av Filmquiz.html - Innhold nederst på siden med footer</figcaption>
+        </figure>
+
+
+        <p>
+            Filmquiz-siden vil gi informasjon om quizer, facebook-arrangementet, hvor de er, tid og dato, og generell informasjon om arrangementet. Siden er satt opp slik at den førstkommende quizen vises øverst, mens de neste er vist fortløpende nedover på siden. Beskrivelse av quizen, samt generell informasjon om arrangementet, vil være inkludert i arrangementsbeskrivelsen. Dette hjelper brukerne til å enkelt kunne innhente informasjon om kommende hendelser.
+        </p>
+
+
+        <p>
+            Hvert event vil være midtstilt på nettsiden, med høyre og venstre-margin på 25%, Marginen til den neste kommende eventet vil være satt til 10%.
+        </p>
+
+        <p>
+            Burgermenyen som er plassert øverst til venstre på nettsiden, vil bli implementert ved hjelp av Javascript, hvor menyen vil bli animert til å vises når burgermenyen blir trykket på. Alle elementene i burgermenyen vil være klikkbare og sende brukeren til de respektive nettsidene. Burgermenyen vil ha denne egenskapen på alle sidene på nettsiden. Footeren til siden vil også eksistere på alle sidene, bortsett fra index.html. Footeren vil inneholde informasjon om filmklubben, samt linker for filmklubbens sosiale mediesider. Eksempel på footeren er vist på det nederste bildet. Footeren vil bli lagd og vist på sidene ved hjelp av Javascript-DOM.
+        </p>
+
+
+        <p class="underOverskrift">
+            Side 4: Medlemskap - medlemskap.html
+        </p>
+
+        <figure>
+            <img class="bildeStdr" src="resources/Medlemskap.png" alt="Image not found!">
+            <figcaption>Figur 7: Mockup av medlemskap.html</figcaption>
+
+        </figure>
+
+        <figure>
+            <img class="bildeStdr" src="resources/Medlemskap2.png" alt="Image not found!">
+            <figcaption>Figur 8: Mockup av medlemskap.html - Innhold nederst på siden med footer</figcaption>
+
+        </figure>
+
+        <p>
+            Siden vil informere brukeren om alt som omhandler medlemskap av Trondheim Filmklubb. Dette inkluderer de ulike medlemskapstypene, så vel som lengden og prisen.
+        </p>
+
+        <p>
+            Siden vil holdes enkel og oversiktlig, med informasjonen satt opp i paragrafer som sentreres på siden. Dette er for å forhindre at brukeren roter seg bort i overflødig informasjon, og vil forsikre at den nyttige informasjonen enkelt kan bli funnet. Siden vil derfor ikke inneholde for mange animasjoner og annet distraherende innhold. Slik som de andre sidene, vil det være en footer som vises nederst på siden.
+        </p>
+
+        <p class="bold">
+            Om Oss, Styret, og Vedtekter er sider som lenkes til fra elementene i dropdown-menyen som er vist øverst i venstre hjørne på figur 6: filmquiz - filmquiz.html.
+        </p>
+
+
+
+
+        <p class="underOverskrift">
+            Side 5: Om oss - om.html
+        </p>
+
+        <figure>
+            <img class="bildeStdr" src="resources/Omoss.png" alt="Image not found!">
+            <figcaption>Figur 9: Mockup av om.html</figcaption>
+
+        </figure>
+        <p>
+            Denne siden vil inneholde generell informasjon om Trondheim Filmklubb. Dette inkluderer litt historie, hva det er, hvem det er, hvor det er, osv. Poenget med denne siden er å informere brukeren om Trondheim Filmklubb, og vil være en måte for brukeren å forstå hva siden representerer.
+        </p>
+
+
+        <p>
+            Nok en gang er det viktig at informasjonen er leselig og at siden ikke er distraherende, da det hovedsakelig vil foregå lesing av informasjon her. Det vil derimot være mulig å inkludere bilder for å støtte opp teksten. Bildene vil vises blant teksten, der bilde-elementene vil danne en margin for å gjøre det luftigere og slik at teksten ikke druknes av bildet.
+        </p>
+
+
+        <p class="underOverskrift">
+            Side 6: Styret - styret.html
+        </p>
+
+        <figure>
+            <img class="bildeStdr" src="resources/Styret.png" alt="Image not found!">
+            <figcaption>Figur 10: Mockup av om.html</figcaption>
+
+        </figure>
+
+        <p>
+            Siden vil gi informasjon om styret, og de ulike medlemmene. Dette vil vises slik at navnet på personen vises i stor skrift, med et portrettbilde av personen med den tilhørende stillingen under. Annen informasjon om styremedlemmet vil skrives under dette. Dette er informasjon som hva medlemmet gjør, alder, hjemsted, favorittsjanger, utdanning, etc.
+
+        </p>
+
+
+
+        <p>
+            Dette vil gjøre at brukeren kan bli kjent med styret, og dermed tilnærme seg filmklubben på en tryggere måte. En vil kunne se ansiktet på de som står bak filmklubben, noe som vil gjøre besøket vennligere.
+
+        </p>
+
+        <p>
+            Siden vil struktureres slik at all informasjon om et styremedlem vil vises i et sammenhengende innholdselement, midtstilt på nettsiden, med høyre og venstre-margin på 25%, Marginen til den neste styremedlem vil være satt til 10%. Bildet vil være sentrert i innholdselementet, og ha en margin til kanten, samt teksten over og under på om lag 10%. Bildet vil være av en forutbestemt størrelse.
+
+        </p>
+
+        <p class="underOverskrift">
+            Side 7: Vedtekter - vedtekter.html
+        </p>
+
+        <figure>
+            <img class="bildeStdr" src="resources/Vedtekter.png" alt="Image not found!">
+            <figcaption>Figur 11: Mockup av vedtekter.html</figcaption>
+        </figure>
+        <p>
+            Denne siden vil enkelt og greit liste opp alle vedtektene til Trondheim Filmklubb. Disse vil være skrevet ned i en liste på siden, der listen midtstilles med margin 25% (venstre/høyre) og det er 10% til det neste elementet i listen.
+        </p>
+
+        <p>
+            Målet med siden er at brukeren kan se hvilke vedtekter som gjelder for filmklubben, og orientere seg i forhold til dette.
+        </p>
+
+        <p class="bold">
+            Min Bruker og FAQ er sidene som er lenket ved knappene på banneret øverst til høyre på siden.
+        </p>
+
+        <p class="underOverskrift">
+            Side 8: Min bruker - bruker.html
+        </p>
+
+        <figure>
+            <img class="bildeStdr" src="resources/Brukerside.png" alt="Image not found!">
+            <figcaption>Figur 12: Mockup av bruker.html</figcaption>
+        </figure>
+
+
+
+        <p>
+            Denne siden skal inneholde enkel informasjon om brukeren. Det vil for eksempel være bilde, navn, adresse, medlemskapsnummer, e-post og favorittsjanger. Favorittsjanger vil for eksempel velges ved en forutbestemt liste av forskjellige sjangere, som vises når en trykker på feltet (javascript).
+        </p>
+
+
+        <p>
+            Dersom brukeren ikke er logget inn vil den bli omdirigert til en innloggingsside, eller dersom brukeren ikke har registrert seg vil en registreringsside vises. Da vi ikke kan benytte oss av backend-teknologier og databaser, vil vi kun lage skjelettet/oppsettet for denne funksjonaliteten. Siden dette er et reelt oppdrag fra en kunde, tenker vi å vise funksjonaliteten med en .txt-fil og Json.
+
+
+        </p>
+
+
+        <p>
+            Brukerinformasjonen vil vises i en boks som er sentrert, med felter for brukerinformasjonen der brukeren vil kunne redigere innholdet. Dette vil implementeres ved å bruke javascript for å håndtere brukerinput og endre informasjonen på siden.
+
+        </p>
+
+        <p class="underOverskrift">
+            Side 9: FAQ - faq.html
+        </p>
+
+        <figure>
+            <img class="bildeStdr" src="resources/Sporsmal.png" alt="Image not found!">
+            <figcaption>Figur 13: Mockup av faq.html</figcaption>
+        </figure>
+
+        <p>
+            Denne siden inneholder kontaktinformasjon og annen praktisk informasjon, og hvordan
+            brukeren kan nå Trondheim Filmklubb. Dette inkluderer, som vist i sidens mockup, email, facebook, instagram, twitter, og e-postadresse. Det vil også være en liste med ofte stilte spørsmål nederst (FAQ). Dette vil hjelpe brukeren med å orientere seg på siden, og finne svar på eventuelle spørsmål, enten ved FAQen eller ved å kontakte filmklubben. Innholdet vil være sentrert slik at det er ca. 25% margin på venstre/høyre. Siden vil holdes enkel, slik at informasjonen brukeren ønsker å hente er så synlig som mulig (no clutter).
+        </p>
+
+    </div>
+
+
+    <div class="rammeStdr">
+
+        <p class="overskrift">
+            Minimumskrav
+        </p>
+
+
+        <p class="underOverskrift">Slik skal vi fullføre minstekravene for Javascript-implementering: </p>
+
+        <p>Per og Fredrik vil ha ansvaret for å implementere:</p>
+
+        <ol>
+            <li>
+                En javascript-funksjon som gjør at sceneteppe på startsiden animeres og avslører innholdet som brukeren ønsker å se. Dette vil gi brukeren en assosiasjon til gamle kinoer (evt. teater), hvilket vil tydeliggjøre at sidens innhold består av film og kultur. Funksjonen vil gjennomføres ved at når brukeren ønsker å navigere til en av de andre sidene, ved å klikke på de tilhørende knappene i navigasjonsbaren, vil sceneteppe-animasjonen utløses.
+            </li>
+
+            <li>
+                Brukeren skal ha mulighet til å sende inn filmforslag til Trondheim Filmklubb. Dermed vil vi måtte implementere en funksjon som tar inn brukerinput og skriver dette til en postkasse med forslag. Den vil måtte ta høyde for at den som sender inn må være autentisert. Da det ikke er noe backend-implementasjon, vil vi derimot ikke kunne autentisere brukeren ved hjelp av database-queries.
+            </li>
+        </ol>
+
+        <p>Pål og Martin vil ha ansvaret for å implementere:</p>
+
+        <ol>
+            <li>
+                En javascript-funksjon som teller ned til den neste hendelsen, både på quiz- og film-sidene. Denne vil implementeres ved å ha en tidsvariabel som sjekkes opp mot hendelsestidspunktet. Ved å beregne delta-tid mellom disse tidspunktene, kan en enkelt oppdatere elementet til å vise gjenstående tid (countdown).
+            </li>
+
+            <li>
+                Vi ønsker at brukeren skal kunne sortere/hente ut visninger etter dato. Dette vil implementeres ved å benytte en funksjon som går gjennom de ulike visningene, og henter ut de aktuelle basert på brukerens valg.
+            </li>
+        </ol>
+
+
+    </div>
+
+    <div class="rammeStdr">
+        <p class="overskrift">
+            Plan
+        </p>
+        <p class="underOverskrift">
+            Organisering del I
+        </p>
+
+        <p>
+            I listen under vil vi gi en oversikt over mappestrukturen til nettsiden. Filtreet er strukturert slik at det er en egen mappe for css, en for resource, og en for scripts.
+        </p>
+
+        <ul class="list">
+            <li>index.html</li>
+            <li>visninger.html</li>
+            <li>filmquiz.html</li>
+            <li>medlemskap.html</li>
+            <li>resources/</li>
+            <ul>
+                <li>Brukerside.png</li>
+                <li>Filmquiz.png</li>
+                <li>Filmquiz2.png</li>
+                <li>Main.png</li>
+                <li>Medlemskap.png</li>
+                <li>Medlemskap2.png</li>
+                <li>network.png</li>
+                <li>Omoss.png</li>
+                <li>Sporsmal.png</li>
+                <li>Styret.png</li>
+                <li>TFLogo.png</li>
+                <li>Vedtekter.png</li>
+                <li>Visninger.png</li>
+            </ul>
+            <li>CSS</li>
+            <ul>
+                <li>stilark.css</li>
+            </ul>
+            <li>scripts</li>
+            <ul>
+                <li>sceneteppe.js</li>
+                <li>forslag.js</li>
+                <li>countdown.js</li>
+                <li>sort.js</li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class=rammeStdr>
+
+        <table id="table">
+            <p class="underOverskrift">
+                Organisering del II
+            </p>
+            <p>
+                Tabellen under gir en oversikt over fordelingen av arbeid mellom de ulike gruppemedlemmene.
+            </p>
+            <tr>
+                <th>Filnavn</th>
+                <th>Beskrivelse</th>
+                <th>Ansvar</th>
+                <th>Deadline</th>
+            </tr>
+            <tr>
+                <td>index.html</td>
+                <td>Hjemmeside</td>
+                <td>Fredrik</td>
+                <td>14.10.19</td>
+            </tr>
+            <tr>
+                <td>filmquiz.html</td>
+                <td>Informasjon om quiz</td>
+                <td>Per</td>
+                <td>14.10.19</td>
+            </tr>
+            <tr>
+                <td>visninger.html</td>
+                <td>Informasjon om filmvisninger</td>
+                <td>Fredrik</td>
+                <td>19.10.19</td>
+            </tr>
+            <tr>
+                <td>medlemskap.html</td>
+                <td>Informasjon om medlemskap og priser</td>
+                <td>Per</td>
+                <td>19.10.19</td>
+            </tr>
+            <tr>
+                <td>vedtekter.html</td>
+                <td>Oversikt over retningslinjer</td>
+                <td>Pål</td>
+                <td>14.10.19</td>
+            </tr>
+            <tr>
+                <td>styret.html</td>
+                <td>Informasjon om styret</td>
+                <td>Pål</td>
+                <td>19.10.19</td>
+            </tr>
+            <tr>
+                <td>om.html</td>
+                <td>Informasjon om historien og samarbeidspartnere, og hvem TFK er</td>
+                <td>Pål</td>
+                <td>27.10.19</td>
+            </tr>
+            <tr>
+                <td>faq.html</td>
+                <td>Kontaktinformasjon og ofte stilte spørsmål</td>
+                <td>Martin</td>
+                <td>14.10.19</td>
+            </tr>
+            <tr>
+                <td>bruker.html</td>
+                <td>Informasjon om brukeren</td>
+                <td>Martin</td>
+                <td>27.10.19</td>
+            </tr>
+            <tr>
+                <td>sceneteppe.js</td>
+                <td>Animere sceneteppe ved onclick, for så å vise innholdet bak</td>
+                <td>Fredrik</td>
+                <td>01.11.19</td>
+            </tr>
+            <tr>
+                <td>forslag.js</td>
+                <td>brukeren skal kunne sende inn filmforslag</td>
+                <td>Pål</td>
+                <td>01.11.19</td>
+            </tr>
+            <tr>
+                <td>countdown.js</td>
+                <td>Brukeren skal kunne se en nedtelling til en gitt hendelse (film/quiz)</td>
+                <td>Per</td>
+                <td>01.11.19</td>
+            </tr>
+            <tr>
+                <td>sort.js</td>
+                <td>brukeren skal kunne se en nedtelling til en gitt hendelse (film/quiz)</td>
+                <td>Martin</td>
+                <td>01.11.19</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+</body>

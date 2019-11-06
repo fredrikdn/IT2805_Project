@@ -18,13 +18,13 @@ function curtainListener() {
     })
 }
 
+//easy load for cards in visninger and filmquiz.
 function easyLoadAll(){
     cards = document.getElementsByClassName("card");
     for(i = 0; i < cards.length; i++){
         easyLoad(document.getElementsByClassName("card")[i]);
     }
 }
-
 
 function easyLoad(elem) {
     var op = 0.1;
@@ -34,9 +34,11 @@ function easyLoad(elem) {
         }
         elem.style.opacity = op;
         elem.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op += op * 0.03;
+        op += op * 0.05;
     }, 10);
 }
+
+
 
 // clone header and footer
 function createHeader() {
@@ -104,6 +106,7 @@ function createHeader() {
     var a4 = document.createElement("a");
     var a5 = document.createElement("a");
     var a6 = document.createElement("a");
+    var a7 = document.createElement("a");
 
     a1.setAttribute("href", "visninger.html");
     a1.innerHTML = "VISNINGER";
@@ -124,13 +127,17 @@ function createHeader() {
     a4.innerHTML = "STYRET";
     alist.push(a4);
 
-    a5.setAttribute("href", "#");
+    a5.setAttribute("href", "vedtekter.html");
     a5.innerHTML = "VEDTEKTER";
     alist.push(a5);
 
-    a6.setAttribute("href", "#");
+    a6.setAttribute("href", "faq.html");
     a6.innerHTML = "FAQ";
     alist.push(a6);
+    
+    a7.setAttribute("href", "om.html");
+    a7.innerHTML = "OM";
+    alist.push(a7);
 
     for (i = 0; i < alist.length; i++) {
         menu.appendChild(alist[i]);

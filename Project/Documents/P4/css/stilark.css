@@ -1,10 +1,10 @@
 body {
     background-color: #a7a7a7;
+    font-family: 'Raleway', sans-serif;
 }
 
 .rammeStdr {
     position: relative;
-    font-family: "verdana", serif;
     color: #123C69;
     font-size: 16px;
     padding-top: 10px;

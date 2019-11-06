@@ -2,12 +2,12 @@ html,
 body {
     background-color: #a7a7a7;
     margin: 0;
-    padding: 0,
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 .rammestdr {
     position: relative;
-    font-family: "verdana"serif;
     color: #123C69;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -43,7 +43,6 @@ body {
 
 #header {
     text-align: center;
-    font-family: "verdana"serif;
     border: 2px;
     border-color: darkgray;
     border-style: solid;
@@ -81,7 +80,6 @@ body {
 }
 
 .tg td {
-    font-family: Arial, sans-serif;
     font-size: 14px;
     padding: 10px 5px;
     border-style: solid;
@@ -92,7 +90,6 @@ body {
 }
 
 .tg th {
-    font-family: Arial, sans-serif;
     font-size: 14px;
     font-weight: normal;
     padding: 10px 5px;

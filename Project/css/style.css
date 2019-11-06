@@ -3,12 +3,13 @@ body {
     margin: 0;
     paddin: 0;
     height: 100%;
+   
 }
 
 body {
     background: #f9f9f9;
     line-height: 1.5;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.1em;
 }
 
@@ -22,6 +23,7 @@ body {
     display: block;
     position: relative;
     left: 1vh;
+    font-weight: 700;
 }
 
 main a {
@@ -29,4 +31,5 @@ main a {
     display: block;
     margin: 1vh;
     left: 3vh;
+    font-weight: 500;
 }

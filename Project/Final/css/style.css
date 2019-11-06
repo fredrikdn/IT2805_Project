@@ -10,7 +10,7 @@ body {
 body {
     background: #f9f9f9;
     line-height: 1.5;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.1em;
 }
 
@@ -472,7 +472,7 @@ form:valid [type=submit] {
         margin: 0;
         padding: 0;
         line-height: 1.5;
-        font-family: sans-serif;
+        font-family: 'Raleway', sans-serif;
         font-size: 1em;
         overflow-x: hidden;
 

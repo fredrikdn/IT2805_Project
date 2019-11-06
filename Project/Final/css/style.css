@@ -765,6 +765,38 @@ form:valid [type=submit] {
         display: block;
     }
 
+    .styret{
+        transition: 0.3s;
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+        border: 1px solid black;
+        background-color: #e7e7e7;
+        margin-bottom: 5vh;
+    }
+    .styret p{
+        margin-left: 1vh;
+    }
+
+    .styret h4{
+        margin-left: 1vh;
+        font-weight: bold;
+    }
+
+    .styret img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1vh;
+        width: 50%;
+        border: 2px solid dimgray;
+    }
+
+    .vareMed{
+        margin: 0 auto;
+        width: 40%;
+    }
+
+
     /* Footer */
     .footer {
         position: relative;

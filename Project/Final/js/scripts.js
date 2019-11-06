@@ -1,8 +1,10 @@
 // add functions on load
 function setup() {
     createHeader();
+    easyLoadAll();
     curtainListener();
     createFooter();
+
 }
 
 // curtain menu on the right, listener
@@ -14,6 +16,26 @@ function curtainListener() {
         this.classList.toggle('active');
         menu.classList.toggle('active');
     })
+}
+
+function easyLoadAll(){
+    cards = document.getElementsByClassName("card");
+    for(i = 0; i < cards.length; i++){
+        easyLoad(document.getElementsByClassName("card")[i]);
+    }
+}
+
+
+function easyLoad(elem) {
+    var op = 0.1;
+    var timer = setInterval(function () {
+        if (op >= 1) {
+            clearInterval(timer);
+        }
+        elem.style.opacity = op;
+        elem.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.03;
+    }, 10);
 }
 
 // clone header and footer
@@ -153,7 +175,7 @@ function createFooter() {
     document.body.insertAdjacentElement('beforeend', footer);
 }
 
-// form to json, handle filmtip-information submission
+// Form to json, handle filmtip-information submission
 formToJson = elements => [].reduce.call(elements, (data, element) => {
 
     data[element.name] = element.value;
@@ -172,5 +194,3 @@ const handleFormSubmit = event => {
 };
 const form = document.getElementsByClassName('form')[0];
 form.addEventListener('submit', handleFormSubmit);
-
-

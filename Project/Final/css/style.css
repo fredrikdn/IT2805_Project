@@ -780,6 +780,7 @@ form:valid [type=submit] {
 
     .styret h4{
         margin-left: 1vh;
+        font-weight: bold;
     }
 
     .styret img{

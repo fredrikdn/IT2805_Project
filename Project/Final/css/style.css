@@ -159,7 +159,7 @@ span::after {
 /* Main content element of the page */
 .content {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     min-height: 65vh;
     margin-top: 20vh;
     margin-bottom: 5vh;
@@ -218,10 +218,88 @@ span::after {
     padding: 1vh;
 }
 
+
 #filmtips {
     text-align: center;
 }
 
+.medlemskap {
+    margin: 0 auto;
+    width: 70%;
+    display: block;
+}
+
+.medlemskap p {
+    display: block;
+}
+
+.styret {
+    transition: 0.3s;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: #e7e7e7;
+    margin-bottom: 5vh;
+}
+
+.styret p {
+    margin: 3vh;
+}
+
+.styret h4 {
+    margin: 0 auto;
+    margin-top: 2vh;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid dimgrey;
+    width: 70%;
+    font-size: 150%;
+}
+
+.styret h2 {
+    margin-top: 2vh;
+    margin-left: 3vh;
+    font-weight: bold;
+    width: 70%;
+    font-size: 100%;
+
+}
+
+.styret img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1vh;
+    width: 50%;
+    border: 2px solid dimgray;
+}
+
+.vareMed {
+    margin: 0 auto;
+    width: 70%;
+}
+
+
+#filmtips {
+    text-align: center;
+}
+
+/* Banner */
+.banner {
+    z-index: 0;
+    position: relative;
+    width: 150%;
+    margin-top: -10vh;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.text {
+    width: 80%;
+    margin: 0 auto;
+}
 
 /* Footer */
 .footer {
@@ -249,7 +327,7 @@ span::after {
 .footer .fa {
     padding: 1vh;
     width: 3vh;
-    height: 3vh;
+    height: 2.5vh;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -462,6 +540,30 @@ form:valid [type=submit] {
     text-align: center;
     margin: 5%;
     color: crimson;
+}
+
+/*Vedtekter*/
+.vedtekter {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*Om*/
+.om {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.om .images {
+    margin-top: 5vh;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.om .images img {
+    margin: 1vh;
+    width: 50%;
 }
 
 
@@ -745,7 +847,7 @@ form:valid [type=submit] {
         top: 0vh;
         font-weight: bold;
     }
-    
+
     .card ul li {
         width: 90%;
         display: block;
@@ -775,7 +877,7 @@ form:valid [type=submit] {
         display: block;
     }
 
-    .styret{
+    .styret {
         transition: 0.3s;
         position: relative;
         width: 50%;
@@ -784,16 +886,31 @@ form:valid [type=submit] {
         background-color: #e7e7e7;
         margin-bottom: 5vh;
     }
-    .styret p{
-        margin-left: 1vh;
+
+    .styret p {
+        margin: 3vh;
     }
 
-    .styret h4{
-        margin-left: 1vh;
+    .styret h4 {
+        margin: 0 auto;
+        margin-top: 2vh;
+        text-align: center;
         font-weight: bold;
+        border-bottom: 2px solid dimgrey;
+        width: 70%;
+        font-size: 150%;
     }
 
-    .styret img{
+    .styret h2 {
+        margin-top: 2vh;
+        margin-left: 3vh;
+        font-weight: bold;
+        width: 70%;
+        font-size: 100%;
+
+    }
+
+    .styret img {
         display: block;
         margin: 0 auto;
         margin-bottom: 1vh;
@@ -801,7 +918,7 @@ form:valid [type=submit] {
         border: 2px solid dimgray;
     }
 
-    .vareMed{
+    .vareMed {
         margin: 0 auto;
         width: 40%;
     }
@@ -1042,6 +1159,41 @@ form:valid [type=submit] {
         text-align: center;
         margin: 5%;
         color: crimson;
+    }
+
+    /*Vedtekter*/
+    .vedtekter {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /*Om*/
+    .om {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .om .images {
+        margin-top: 5vh;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        position: relative;
+        bottom: -15vh;
+    }
+
+    .om .images img {
+        margin: 1vh;
+        width: 20%;
+        display: inline-block;
+        bottom: 1vh;
+    }
+
+    /*FAQ*/
+    .faq {
+        width: 70%;
+        margin: 0 auto;
     }
 
 }

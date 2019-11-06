@@ -7,8 +7,8 @@ function setup(){
 
 // curtain menu on the right, listener
 function curtainListener() {
-    const iconMenu = document.querySelector('.menu_toggler');
-    const menu = document.querySelector('.menu');
+    iconMenu = document.querySelector('.menu_toggler');
+    menu = document.querySelector('.menu');
 
     iconMenu.addEventListener('click', function () {
         this.classList.toggle('active');
@@ -154,7 +154,7 @@ function createFooter() {
 }
 
 // form to json, handle filmtip-information submission
-const formToJson = elements => [].reduce.call(elements, (data, element) => {
+formToJson = elements => [].reduce.call(elements, (data, element) => {
 
     data[element.name] = element.value;
     return data;

@@ -98,7 +98,7 @@ function createHeader() {
     a3.setAttribute("class", "mobile");
     alist.push(a3);
 
-    a4.setAttribute("href", "#");
+    a4.setAttribute("href", "styret.html");
     a4.innerHTML = "STYRET";
     alist.push(a4);
 

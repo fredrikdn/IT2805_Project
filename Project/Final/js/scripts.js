@@ -151,10 +151,12 @@ function createHeader() {
 function createFooter() {
     var footer = document.createElement("div");
     var soMe = document.createElement("div");
+    var kont = document.createElement("div");
     var alist = [];
 
     footer.setAttribute("class", "footer");
     soMe.setAttribute("class", "soMe");
+    kont.setAttribute("class", "kont")
 
     var a1 = document.createElement("a");
     a1.setAttribute("href", "https://www.facebook.com/Trondheim.Filmklubb");
@@ -177,7 +179,17 @@ function createFooter() {
     for (i = 0; i < alist.length; i++) {
         soMe.appendChild(alist[i]);
     }
-
+    
+    var ulF = document.createElement("ul");
+    var el1 = document.createElement("li");
+    var el2 = document.createElement("li");
+    el1.innerHTML = "Kjøpmannsgata 35, 7011 Trondheim";
+    el2.innerHTML = "post@trondheim-filmklubb.no";
+    ulF.appendChild(el1);
+    ulF.appendChild(el2);
+    
+    kont.appendChild(ulF);
+    footer.appendChild(kont);
     footer.appendChild(soMe);
     document.body.insertAdjacentElement('beforeend', footer);
 }

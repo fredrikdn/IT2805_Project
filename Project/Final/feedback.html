@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="nb">
 
 <head>
     <meta charset="utf-8">
@@ -19,16 +19,13 @@
             <textarea name="feedback" placeholder="Overbevis oss her..." required></textarea>
         </div>
         <div class='desc'>Ditt navn:</div>
-        <input type='text' name='realname' required placeholder="Skriv inn navn her..."
-            oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+        <input type='text' name='realname' required placeholder="Skriv inn navn her..." oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
 
         <div class='desc'>Filmnavn:</div>
-        <input type='text' name='realname' required placeholder="Skriv inn navn her..."
-            oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+        <input type='text' name='realname' required placeholder="Skriv inn navn her..." oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
 
         <div class='desc'>Email:</div>
-        <input type='email' name='email' required placeholder="email@email.com"
-            oninvalid="this.setCustomValidity('Email Address Not Valid')" oninput="this.setCustomValidity('')">
+        <input type='email' name='email' required placeholder="email@email.com" oninvalid="this.setCustomValidity('Email Address Not Valid')" oninput="this.setCustomValidity('')">
 
         <div class='desc'>Fødselsdato:</div>
         <input type='date' name='date' max="2005-01-01" required>
@@ -66,6 +63,20 @@
             </select>
             <div class='desc'>Lyd:</div>
             <select class='sel' name='Lyd' required>
+                <option class="dis" disabled selected value>_</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+            </select>
+            <div class='desc'>Redrigering:</div>
+            <select class='sel' name='Redigering' required>
                 <option class="dis" disabled selected value>_</option>
                 <option value=1>1</option>
                 <option value=2>2</option>

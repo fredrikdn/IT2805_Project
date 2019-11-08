@@ -661,6 +661,8 @@ form:valid [type=submit] {
         box-sizing: border-box;
         height: 8vh;
     }
+    
+
 
     .header nav ul li a {
         color: #fff;
@@ -673,7 +675,7 @@ form:valid [type=submit] {
         height: 8vh;
     }
 
-    .header nav ul li a:hover {
+    .active, .navElem:hover {
         color: #444;
     }
 
@@ -779,7 +781,7 @@ form:valid [type=submit] {
         transition: 0.3s ease all;
     }
 
-    .menu .mobile {
+    .menu #a1, #a2, #a3 {
         display: none;
     }
 

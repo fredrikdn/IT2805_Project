@@ -2,8 +2,9 @@
 function setup() {
     createHeader();
     easyLoadAll();
-    curtainListener();
     createFooter();
+    curtainListener();
+    activeListener();
 
 }
 
@@ -18,10 +19,28 @@ function curtainListener() {
     })
 }
 
+//active header-element
+function activeListener() {
+    var navCont = document.getElementById("navCont");
+    var navElem = navCont.querySelectorAll(".navElem");
+    console.log(navElem);
+
+    for (var i = 0; i < navElem.length; i++) {
+        console.log(navElem[i]);
+        navElem[i].addEventListener('click', function () {
+            var current = document.getElementsByClassName("active");
+            if (current.length > 0) {
+                current[0].className = current[0].className.replace(" active", "");
+            }
+            this.className += " active";
+        });
+    }
+}
+
 //easy load for cards in visninger and filmquiz.
-function easyLoadAll(){
+function easyLoadAll() {
     cards = document.getElementsByClassName("card");
-    for(i = 0; i < cards.length; i++){
+    for (i = 0; i < cards.length; i++) {
         easyLoad(document.getElementsByClassName("card")[i]);
     }
 }
@@ -59,6 +78,8 @@ function createHeader() {
     var a2 = document.createElement("a");
     var a3 = document.createElement("a");
 
+    ul.setAttribute("id", "navCont");
+
     a1.setAttribute("href", "visninger.html");
     a1.innerHTML = "VISNINGER";
 
@@ -71,6 +92,10 @@ function createHeader() {
     li1.appendChild(a1);
     li2.appendChild(a2);
     li3.appendChild(a3);
+
+    a1.setAttribute("class", "navElem");
+    a2.setAttribute("class", "navElem");
+    a3.setAttribute("class", "navElem");
 
     ul.appendChild(li1);
     ul.appendChild(li2);
@@ -110,17 +135,17 @@ function createHeader() {
 
     a1.setAttribute("href", "visninger.html");
     a1.innerHTML = "VISNINGER";
-    a1.setAttribute("class", "mobile");
+    a1.setAttribute("id", "a1");
     alist.push(a1);
 
     a2.setAttribute("href", "filmquiz.html");
     a2.innerHTML = "FILMQUIZ";
-    a2.setAttribute("class", "mobile");
+    a2.setAttribute("id", "a2");
     alist.push(a2);
 
     a3.setAttribute("href", "medlemskap.html");
     a3.innerHTML = "MEDLEMSKAP";
-    a3.setAttribute("class", "mobile");
+    a3.setAttribute("id", "a3");
     alist.push(a3);
 
     a4.setAttribute("href", "styret.html");
@@ -134,7 +159,7 @@ function createHeader() {
     a6.setAttribute("href", "faq.html");
     a6.innerHTML = "FAQ";
     alist.push(a6);
-    
+
     a7.setAttribute("href", "om.html");
     a7.innerHTML = "OM";
     alist.push(a7);
@@ -151,10 +176,12 @@ function createHeader() {
 function createFooter() {
     var footer = document.createElement("div");
     var soMe = document.createElement("div");
+    var kont = document.createElement("div");
     var alist = [];
 
     footer.setAttribute("class", "footer");
     soMe.setAttribute("class", "soMe");
+    kont.setAttribute("class", "kont")
 
     var a1 = document.createElement("a");
     a1.setAttribute("href", "https://www.facebook.com/Trondheim.Filmklubb");
@@ -178,6 +205,16 @@ function createFooter() {
         soMe.appendChild(alist[i]);
     }
 
+    var ulF = document.createElement("ul");
+    var el1 = document.createElement("li");
+    var el2 = document.createElement("li");
+    el1.innerHTML = "Kjøpmannsgata 35, 7011 Trondheim";
+    el2.innerHTML = "post@trondheim-filmklubb.no";
+    ulF.appendChild(el1);
+    ulF.appendChild(el2);
+
+    kont.appendChild(ulF);
+    footer.appendChild(kont);
     footer.appendChild(soMe);
     document.body.insertAdjacentElement('beforeend', footer);
 }
@@ -190,6 +227,7 @@ formToJson = elements => [].reduce.call(elements, (data, element) => {
 }, {});
 
 const handleFormSubmit = event => {
+    //prevents submitting default
     event.preventDefault();
 
     const data = formToJson(form.elements);

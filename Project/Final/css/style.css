@@ -4,14 +4,16 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+
 
 }
 
 body {
     background: #f9f9f9;
-    line-height: 1.5;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.1em;
+    overflow-y: hidden;
 }
 
 /* Header */
@@ -169,7 +171,7 @@ span::after {
 .card {
     transition: 0.3s;
     position: relative;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     border: 1px solid black;
     background-color: #e7e7e7;
@@ -322,6 +324,18 @@ span::after {
 
 .soMe a {
     margin: 1vh;
+}
+
+.kont {
+    position: relative;
+    display: inline-block;
+    top: 2vh;
+    left: 4vh;
+}
+
+.kont ul {
+    list-style: none;
+    padding: 0;
 }
 
 .footer .fa {
@@ -651,6 +665,8 @@ form:valid [type=submit] {
         height: 8vh;
     }
 
+
+
     .header nav ul li a {
         color: #fff;
         text-decoration: none;
@@ -662,7 +678,8 @@ form:valid [type=submit] {
         height: 8vh;
     }
 
-    .header nav ul li a:hover {
+    .active,
+    .navElem:hover {
         color: #444;
     }
 
@@ -768,7 +785,9 @@ form:valid [type=submit] {
         transition: 0.3s ease all;
     }
 
-    .menu .mobile {
+    .menu #a1,
+    #a2,
+    #a3 {
         display: none;
     }
 
@@ -881,7 +900,7 @@ form:valid [type=submit] {
     .styret {
         transition: 0.3s;
         position: relative;
-        width: 50%;
+        width: 40%;
         margin: 0 auto;
         border: 1px solid black;
         background-color: #e7e7e7;
@@ -939,14 +958,27 @@ form:valid [type=submit] {
 
     .soMe {
         position: relative;
-        float: right;
+        display: inline-block;
         top: 5vh;
+        right: 1vh;
         margin-right: 5vh;
         display: flex;
     }
 
     .soMe a {
         margin: 1vh;
+    }
+
+    .kont {
+        position: relative;
+        display: inline-block;
+        top: 4vh;
+        left: 4vh;
+    }
+
+    .kont ul {
+        list-style: none;
+        padding: 0;
     }
 
     .footer .fa {
@@ -1181,7 +1213,7 @@ form:valid [type=submit] {
         text-align: center;
         display: block;
         position: relative;
-        bottom: -15vh;
+        bottom: -10vh;
     }
 
     .om .images img {

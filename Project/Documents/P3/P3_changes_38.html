@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="nb" dir="ltr">
+
+
+<head>
+    <link rel="stylesheet" href="css/stilark.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <script src="scripts/time.js"></script>
+    <title>P3 - Project Changes</title>
+
+</head>
+
+<body>
+
+    <div class="rammeStdr">
+        <div id="headerTxt">
+            <img src="resources/TFLogo.png" alt="image not loaded" id="logo">
+            <hr>
+            <h5 id="navn">Fredrik, Martin, Per og Pål</h5>
+            <h4 id="gruppe">Gruppe 38</h4>
+            <h6 id="folk">
+                <a href="http://folk.ntnu.no/perdh/" target="_blank">folk.ntnu.no/perdh</a>
+            </h6>
+
+            <h6>
+                Sist endret: 08.11.2019
+            </h6>
+        </div>
+
+    </div>
+
+    <div class="rammeStdr">
+        <p>Klientnavn: Trondheim filmklubb</p>
+        <p>Websidenavn: Trondheim filmklubb</p>
+        <p>Kontaktperson: Pål Manshaus</p>
+    </div>
+
+    <div class="rammeStdr">
+        <h3>Endringer:</h3>
+        <p>
+            Hensikten med nettsiden er å vise hvem Trondheim Filmklubb er, og ha en oversikt over når de ulike arrangementene foregår. Vi har dermed gjort det slik at sidene som inneholder de ulike arrangementene er i fokus på headeren, mens informasjonssider finnes under en sidemeny. Siden skulle være så ryddig som mulig, slik at brukeren enkelt kan navigere seg fremover.
+        </p>
+        <p>
+            For selve layouten endret vi noen elementer. Dette inkluderte en omstrukturering av headeren. Her fjernet vi brukersiden, og la FAQ sammen med styret, vedtekter og om under sidemenyen. Dropdown-menyen er en annen ting som ble endret på. Den er nå lokalisert i høyre hjørne og sceneteppefunksjonen ble benyttet her i stedet, for å minke forvirring. Innholdselementene på visninger, filmquiz og styret, benytter kort for å presentere innholdet. Dette er gjort slik at siden skal bli ryddig og hvert element separert. Vi ønsket å gjøre dette for å skape en sammenheng i stil mellom de ulike sidene.
+        </p>
+        <h4>Endringer i styling:</h4>
+        <p>
+            Vi tenkte orginalt å bruke #a7a7a7 for bakgrunnen på alle sidene, men innså at denne ble litt mørk. Dermed endret vi denne til #f9f9f9. Vi tenkte også å ha headeren i hvit, men dette stod ikke i stil med den forrige endringen, så vi skapte kontraster ved bruk av #b2b2b2. Den samme fargen #b2b2b2 ble også benyttet for footeren, for å skape harmoni. Skriften er fortsatt svart. Vi har derimot droppet å ha en sekundær bakgrunn, da dette ikke passet inn med sidens stil.
+        </p>
+        <h4>Endringer på sidene:</h4>
+        <p>
+            <b>index.html</b>: Denne siden ble kontinuerlig gjennom utviklingen av nettsiden forandret, både på grunn av knotete funksjoner, samt tilbakemeldinger fra testere og Trondheim Filmklubb. Den endte opp med å ha et banner med generell informasjon under.
+        </p>
+        <p>
+            <b>bruker.html</b>: Det viste seg at Trondheim filmklubb ikke var interessert i en brukerside, dermed droppet vi å implementere denne.
+        </p>
+        <p>
+            <b>visninger.html</b>: Vi valgte å droppe implementering av videoelementer gjennom iframe, da Trondheim Filmklubb ønsket å kun bruke posters. Dette var for å ikke avsløre store deler av filmen.
+        </p>
+        <p>
+            <b>feedback.html</b>: Vi lagde en side for å ta hånd om filmforslag ved å opprette et skjema for innsending. Lenken til denne siden finner man på bunnen av visninger.hmtl. Den er plassert her, og ikke i headeren, for å gjøre at kun ytterst interesserte brukere skal benytte seg av denne funksjonen. Dette gjøres basert på forslag fra Trondheim Filmklubb.
+        </p>
+    </div>
+
+    <div class="rammeStdr">
+        <h3>Javascript</h3>
+        <p>
+            Vi implementerte sceneteppe-funksjonen i sidebaren i stedet for å ha den ved onload på forsiden. Dette var for å minke forvirrelse og generell ryddighet. Den er nå implementert ved en eventListener, som kjører ved onclick på meny-knappen. Fredrik hadde ansvaret for denne. 
+        </p>
+        <p>
+            Vi implementerte filmforslag-funksjonen som planlagt. På grunn av design-begrensninger og ingen backend, var vi nødt til å heller opprette JSON-elementer som skrives ut nederst på siden. Ved videre utvikling vil dette bli håndtert ved skriving til en database. Per og Fredrik implmenterte denne funksjonen. 
+        </p>
+        <p>
+            Vi møtte på problemer da vi skulle implementere sortering av "card"-elementene. Det viste seg å være mye vanskeligere enn vi trodde, spesielt da vi ikke kunne bruke jQuery som hadde en veldig enkel løsning. Det var vanskelig å behandle strukturen og dato-elementene med ren JS. Vi endte opp med å heller lage en easyLoad-funksjon, som gjør at elementene lastes med mykere overgang. Dette fører til at sidene ble vennligere for brukerens øyne. Per, Pål, Fredrik implementerte denne. 
+        </p>
+        <p>
+            Vi møtte også på problemer ved countdown til events av samme grunn. Vi har derimot også en femte funksjon som tar hånd om header og footer ved onload, for å skape modularitet. Denne teller nå som vår fjerde JavaScript-funksjon.
+        </p>
+        
+    </div>
+
+    <div class="rammeStdr">
+        <h3>Modularitet</h3>
+        <p>
+            For å hindre gjenbruk av kode, valgte vi å implementere header og footer ved JavaScript. Dette kjøres ved onload for de ulike sidene. Vi har også benyttet en klasse "card" for et ryddigere oppsett på de ulike sidene, samt å lett kunne skille dem fra hverandre. Dette har hindret gjenbruk av kode på tvers av diverse sider.
+        </p>
+    </div>
+
+    <div class="rammeStdr">
+        <h3>Sidestruktur:</h3>
+        <ul class="list">
+            <li>Project</li>
+            <ul>
+                <li>index.html</li>
+                <li>css/</li>
+                <ul>
+                    <li>style.css</li>
+                </ul>
+                <li>Documents/</li>
+                <ul>
+                    <li>P1/</li>
+                    <ul>
+                        <li>css/
+                            <ul>
+                                <li>stilark.css</li>
+                            </ul>
+                        </li>
+                        <li>resources/</li>
+                        <ul>
+                            <li>TFLogo.png</li>
+                        </ul>
+                        <li>P1_requirements_38.html</li>
+                    </ul>
+                    <li>P2/</li>
+                    <ul>
+                        <li>...</li>
+                    </ul>
+                    <li>P3/</li>
+                    <ul>
+                        <li>...</li>
+                    </ul>
+                    <li>P4/</li>
+                    <ul>
+                        <li>...</li>
+                    </ul>
+                </ul>
+                <li>Final/</li>
+                <ul>
+                    <li>css/</li>
+                    <ul>
+                        <li>style.css</li>
+                    </ul>
+
+                    <li>js/</li>
+                    <ul>
+                        <li>scripts.js</li>
+                    </ul>
+                    <li>resources/</li>
+                    <ul>
+                        <li>barnefilmklubben.png</li>
+                        <li>batman_poster.jpg</li>
+                        <li>...</li>
+                        <li>work-work.jpg</li>
+                    </ul>
+                    <li>faq.html</li>
+                    <li>feedback.html</li>
+                    <li>filmquiz.html</li>
+                    <li>index.html</li>
+                    <li>medlemskap.html</li>
+                    <li>om.html</li>
+                    <li>styret.html</li>
+                    <li>vedtekter.html</li>
+                    <li>visninger.html</li>
+                </ul>
+            </ul>
+        </ul>
+    </div>
+    
+    <div class="rammeStdr">
+        <h3>Arbeidsfordeling</h3>
+            <table id="table">
+            <p>
+                Tabellen under gir en oversikt over fordelingen av arbeid mellom de ulike gruppemedlemmene.
+            </p>
+            <tr>
+                <th>Filnavn</th>
+                <th>Beskrivelse</th>
+                <th>Ansvar</th>
+            </tr>
+            <tr>
+                <td>index.html</td>
+                <td>Hjemmeside</td>
+                <td>Fredrik, Per</td>
+            </tr>
+            <tr>
+                <td>filmquiz.html</td>
+                <td>Informasjon om quiz</td>
+                <td>Per</td>
+            </tr>
+            <tr>
+                <td>visninger.html</td>
+                <td>Informasjon om filmvisninger</td>
+                <td>Fredrik</td>
+            </tr>
+            <tr>
+                <td>medlemskap.html</td>
+                <td>Informasjon om medlemskap og priser</td>
+                <td>Per</td>
+            </tr>
+            <tr>
+                <td>vedtekter.html</td>
+                <td>Oversikt over retningslinjer</td>
+                <td>Pål</td>
+            </tr>
+            <tr>
+                <td>styret.html</td>
+                <td>Informasjon om styret</td>
+                <td>Pål</td>
+            </tr>
+            <tr>
+                <td>om.html</td>
+                <td>Informasjon om historien og samarbeidspartnere, og hvem TFK er</td>
+                <td>Pål</td>
+            </tr>
+            <tr>
+                <td>faq.html</td>
+                <td>Kontaktinformasjon og ofte stilte spørsmål</td>
+                <td>Pål</td>
+            </tr>
+            <tr>
+                <td>feedback.html</td>
+                <td>Filmtips fra bruker til filmklubben</td>
+                <td>Fredrik</td>
+            </tr>
+            <tr>
+                <td>curtainListener - js</td>
+                <td>Animere sceneteppe ved onclick, for så å vise innholdet i sidemenyen</td>
+                <td>Fredrik</td>
+            </tr>
+            <tr>
+                <td>forslag - js</td>
+                <td>brukeren skal kunne sende inn filmforslag</td>
+                <td>Fredrik</td>
+            </tr>
+            <tr>
+                <td>easyLoad - js</td>
+                <td>Sakte lasting av elementer</td>
+                <td>Per, Pål, Fredrik</td>
+            </tr>
+            <tr>
+                <td>setup - js</td>
+                <td>Laste inn ferdig header og footer</td>
+                <td>Fredrik, Per</td>
+            </tr>
+        </table>
+    </div>
+
+</body>

@@ -7,8 +7,6 @@ body {
     line-height: 1.5;
     font-family: 'Raleway', sans-serif;
     font-size: 1.1em;
-
-
 }
 
 body {
@@ -56,7 +54,6 @@ body {
 
 /* Navigation buttons */
 .header nav {
-    font-weight: 0;
     height: 8vh;
     display: none;
     justify-content: center;
@@ -841,7 +838,6 @@ form:valid [type=submit] {
         border-left: 0;
         border-right: 0;
         margin-top: 0vh;
-
     }
 
     .card:hover {
@@ -849,7 +845,6 @@ form:valid [type=submit] {
     }
 
     .card h4 {
-        font-size: 1.2ems;
         position: relative;
         display: block;
         top: -1.5vh;
